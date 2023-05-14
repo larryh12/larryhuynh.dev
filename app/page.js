@@ -1,3 +1,9 @@
 export default function Home() {
-  return <main className="text-rp-text">Hello World!</main>;
+  return (
+    <main>
+      <div id="home" className="text-rp-text">
+        Hello World!
+      </div>
+    </main>
+  );
 }
