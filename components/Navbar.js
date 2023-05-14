@@ -10,6 +10,7 @@ import {
   AiOutlineInfoCircle,
   AiOutlineLaptop,
   AiOutlineCode,
+  AiOutlineRobot,
   AiOutlineDesktop,
   AiOutlineLayout,
   AiOutlineMessage,
@@ -88,6 +89,13 @@ const Navbar = () => {
         >
           <AiOutlineCode className="mr-4 text-4xl" />
           Projects
+        </a>
+        <a
+          href="#gptools"
+          className="flex w-full flex-row rounded-xl px-4 py-3 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
+        >
+          <AiOutlineRobot className="mr-4 text-2xl" />
+          GPTools
         </a>
         <a
           href="#webapps"
