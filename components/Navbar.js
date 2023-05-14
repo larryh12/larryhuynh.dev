@@ -57,62 +57,62 @@ const Navbar = () => {
 
       <div
         className={`${
-          toggle ? 'flex' : 'hidden'
-        } absolute right-0 top-20 h-full w-full max-w-screen-md flex-col items-start bg-rp-base p-4 text-3xl font-semibold text-rp-text md:hidden`}
+          toggle ? 'w-full' : 'w-0'
+        } absolute right-0 top-20 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-2xl font-semibold text-rp-text transition-all md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
         <a
           href="#home"
-          className="flex w-full flex-row rounded-xl p-4 active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 active:bg-rp-overlay active:text-rp-love"
         >
-          <AiOutlineHome className="mr-4" />
+          <AiOutlineHome className="mr-4 text-3xl" />
           Home
         </a>
         <a
           href="#about"
-          className="flex w-full flex-row rounded-xl p-4 active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 active:bg-rp-overlay active:text-rp-love"
         >
-          <AiOutlineInfoCircle className="mr-4" />
+          <AiOutlineInfoCircle className="mr-4 text-3xl" />
           About
         </a>
         <a
           href="#experience"
-          className="flex w-full flex-row rounded-xl p-4 active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 active:bg-rp-overlay active:text-rp-love"
         >
-          <AiOutlineLaptop className="mr-4" />
+          <AiOutlineLaptop className="mr-4 text-3xl" />
           Experience
         </a>
         <a
           href="#projects"
-          className="flex w-full flex-row rounded-xl p-4 active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 active:bg-rp-overlay active:text-rp-love"
         >
-          <AiOutlineCode className="mr-4" />
+          <AiOutlineCode className="mr-4 text-3xl" />
           Projects
         </a>
         <a
           href="#webapps"
-          className="flex w-full flex-row rounded-xl p-4 pl-8 text-xl font-medium active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
         >
           <AiOutlineDesktop className="mr-4 text-2xl" />
           Web Apps
         </a>
         <a
           href="#frontend"
-          className="flex w-full flex-row rounded-xl p-4 pl-8 text-xl font-medium active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
         >
           <AiOutlineLayout className="mr-4 text-2xl" />
           Frontend Sites
         </a>
         <a
           href="#contact"
-          className="flex w-full flex-row rounded-xl p-4 active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 active:bg-rp-overlay active:text-rp-love"
         >
-          <AiOutlineMessage className="mr-4" />
+          <AiOutlineMessage className="mr-4 text-3xl" />
           Contact
         </a>
         <a
           href="mailto:larry.huynh.dev@outlook.com"
-          className="flex w-full flex-row rounded-xl p-4 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
         >
           <AiOutlineMail className="mr-4 text-2xl" />
           larry.huynh.dev@outlook.com
@@ -120,7 +120,7 @@ const Navbar = () => {
         <a
           href="https://www.linkedin.com/in/larry-huynh-dev"
           target="_blank"
-          className="flex w-full flex-row rounded-xl p-4 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
         >
           <AiOutlineLinkedin className="mr-4 text-2xl" />
           larry-huynh-dev
@@ -128,7 +128,7 @@ const Navbar = () => {
         <a
           href="https://github.com/larryh12"
           target="_blank"
-          className="flex w-full flex-row rounded-xl p-4 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
+          className="flex w-full flex-row rounded-xl px-4 py-2 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
         >
           <AiOutlineGithub className="mr-4 text-2xl" />
           larryh12
