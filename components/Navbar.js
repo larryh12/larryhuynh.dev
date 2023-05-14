@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav id="nav" className="flex justify-between">
-      <a href="#home" className="h-12 w-24 cursor-pointer">
+      <a href="/" className="h-12 w-24 cursor-pointer">
         <Image src={logo} alt="logo" />
       </a>
 
