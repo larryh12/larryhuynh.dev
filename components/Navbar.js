@@ -31,7 +31,7 @@ const Navbar = () => {
         <Image src={logo} alt="logo" />
       </a>
 
-      <div className="hidden text-base font-semibold text-rp-text md:flex">
+      <div className="hidden text-base font-semibold md:flex">
         <a href="#home" className="mr-4 hover:text-rp-love">
           HOME
         </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className="flex cursor-pointer text-4xl text-rp-text md:hidden"
+        className="flex cursor-pointer text-4xl md:hidden"
         onClick={() => setToggle((prev) => !prev)}
       >
         {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
@@ -59,7 +59,7 @@ const Navbar = () => {
       <div
         className={`${
           toggle ? 'w-full' : 'w-0'
-        } absolute right-0 top-20 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-3xl font-semibold text-rp-text transition-all md:hidden`}
+        } absolute right-0 top-20 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-3xl font-semibold transition-all md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
         <a
