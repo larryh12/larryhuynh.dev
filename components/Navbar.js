@@ -31,21 +31,21 @@ const Navbar = () => {
         <Image src={logo} alt="logo" />
       </a>
 
-      <div className="hidden text-base font-semibold md:flex">
+      <div className="hidden text-lg font-semibold md:flex">
         <a href="#home" className="mr-4 hover:text-rp-love">
-          HOME
+          Home
         </a>
         <a href="#about" className="mr-4 hover:text-rp-love">
-          ABOUT
+          About
         </a>
         <a href="#experience" className="mr-4 hover:text-rp-love">
-          EXPERIENCE
+          Experience
         </a>
         <a href="#projects" className="mr-4 hover:text-rp-love">
-          PROJECTS
+          Projects
         </a>
         <a href="#contact" className="hover:text-rp-love">
-          CONTACT
+          Contact
         </a>
       </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
       <div
         className={`${
           toggle ? 'h-screen w-screen' : 'h-0 w-0'
-        } absolute right-0 top-20 z-10 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-3xl font-semibold transition-all md:hidden`}
+        } absolute right-0 top-20 z-10 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-3xl font-semibold transition-[width,height] md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
         <a

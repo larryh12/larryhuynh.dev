@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse py-8 md:flex-row md:py-64"
+      className="flex flex-col-reverse py-8 md:flex-row md:py-48"
     >
       <div className="flex-1">
         <div className="my-0.5 text-rp-subtle md:my-1">Hi, my name is</div>
