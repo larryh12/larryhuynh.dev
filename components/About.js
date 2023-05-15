@@ -34,27 +34,27 @@ const About = () => {
           </div>
           <div>
             💻 Currently I&apos;m learning:
-            <div className="mt-1 flex flex-wrap [&>div]:m-1 [&>div]:flex [&>div]:cursor-pointer [&>div]:flex-row [&>div]:rounded-xl [&>div]:bg-rp-overlay [&>div]:px-2 [&>div]:py-1 [&>div]:text-sm [&>div]:hover:bg-rp-highmed">
-              <div className="">
+            <div className="mt-1 flex flex-wrap [&>div]:m-1 [&>div]:flex [&>div]:cursor-pointer [&>div]:flex-row [&>div]:rounded-xl [&>div]:bg-rp-overlay [&>div]:px-2 [&>div]:py-1 [&>div]:text-sm">
+              <div className="hover:bg-rp-highmed">
                 <TbBrandReact className="pt-1 text-base" /> React
               </div>
-              <div className="">
+              <div className="hover:bg-rp-highmed">
                 <TbBrandNextjs className="pt-1 text-base" />
                 Next.js
               </div>
-              <div className="">
+              <div className="hover:bg-rp-highmed">
                 <TbBrandTailwind className="pt-1 text-base" />
                 Tailwind CSS
               </div>
-              <div className="">
+              <div className="hover:bg-rp-highmed">
                 <TbBrandJavascript className="pt-1 text-base" />
                 JavaScript
               </div>
-              <div className="">
+              <div className="hover:bg-rp-highmed">
                 <TbBrandTypescript className="pt-1 text-base" />
                 TypeScript
               </div>
-              <div className="">
+              <div className="hover:bg-rp-highmed">
                 <TbBrandPython className="pt-1 text-base" />
                 Python
               </div>
