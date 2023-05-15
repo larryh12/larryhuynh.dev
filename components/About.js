@@ -63,18 +63,56 @@ const About = () => {
         </div>
         <div className="mx-4 hidden w-0.5 bg-gradient-to-b from-rp-rose to-rp-pine md:block"></div>
         <div className="flex-1">
-          <div className="mb-2 mt-4 text-lg font-semibold">Qualifications</div>
-          <div className="mt-2 flex justify-between text-base font-medium">
+          <div className="my-2 mt-4 text-lg font-semibold">Qualifications</div>
+          <div className="flex justify-between text-base font-medium">
             Griffith University
             <span className="text-rp-gold">(2019 - 2022)</span>
           </div>
           <a
             href="https://cricos.education.gov.au/Institution/InstitutionDetails.aspx?ProviderCode=00233E"
             target="_blank"
-            className="flex flex-row text-xs text-rp-subtle"
+            className="mb-2 flex flex-row text-xs text-rp-subtle underline"
           >
             CRICOS: 00233E <FaExternalLinkAlt className="ml-1" />
           </a>
+          <div className="[&>div]:my-1">
+            <div>• Bachelor of Information Technology</div>
+            <div>• Awarded with Distinction GPA: 6.83 / 7</div>
+            <div>
+              • Award for Academic Excellence
+              <br />
+              <a
+                href="https://www.credly.com/badges/295dfe3f-f2f0-4a3b-ae0a-f0acb3824c9c/"
+                target="_blank"
+                className="mx-1 underline"
+              >
+                2019 <FaExternalLinkAlt className="inline text-sm" />
+              </a>
+              <a
+                href="https://www.credly.com/badges/87f3870c-20a6-47ab-b565-7202dc077208/"
+                target="_blank"
+                className="mx-1 underline"
+              >
+                2020 <FaExternalLinkAlt className="inline text-sm" />
+              </a>
+              <a
+                href="https://www.credly.com/badges/f6977589-9622-4dd3-9d50-53289877830d/"
+                target="_blank"
+                className="mx-1 underline"
+              >
+                2022 <FaExternalLinkAlt className="inline text-sm" />
+              </a>
+            </div>
+          </div>
+          <div className="my-2 mt-8 text-lg font-semibold">Certifications</div>
+          <div className="my-2 flex justify-between text-base font-medium">
+            PTE Academic
+            <span className="text-rp-gold">Score: 90 · Mar 2023</span>
+          </div>
+          <div className="my-2 flex justify-between text-base font-medium">
+            IELTS Academic
+            <span className="text-rp-gold">Score: 8.0 · Jun 2017</span>
+          </div>
         </div>
       </div>
     </section>
