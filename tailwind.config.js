@@ -24,6 +24,9 @@ module.exports = {
         'rp-highmed': '#403d52',
         'rp-highhigh': '#524f67',
       },
+      flex: {
+        2: '2 2 0%',
+      },
     },
   },
   plugins: [],
