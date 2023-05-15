@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse justify-between py-16 md:flex-row md:py-64"
+      className="flex flex-col-reverse py-16 md:flex-row md:py-64"
     >
       <div className="flex-1">
         <div className="my-1 text-rp-subtle">Hi, my name is</div>
@@ -42,8 +42,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="mb-12 flex flex-1 items-center justify-center">
-        <div className="max-w-[50%]">
+      <div className="mb-12 flex flex-1 items-center justify-center md:justify-end">
+        <div className="max-w-[67%]">
           <Image src={avatar} alt="avatar" />
         </div>
       </div>
