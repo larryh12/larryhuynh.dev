@@ -9,22 +9,22 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse py-16 md:flex-row md:py-64"
+      className="flex flex-col-reverse py-8 md:flex-row md:py-64"
     >
       <div className="flex-1">
-        <div className="my-1 text-rp-subtle">Hi, my name is</div>
-        <div className="my-1 inline-block bg-gradient-to-r from-rp-rose to-rp-love bg-clip-text text-7xl font-bold text-transparent">
+        <div className="my-0.5 text-rp-subtle md:my-1">Hi, my name is</div>
+        <div className="my-0.5 inline-block bg-gradient-to-r from-rp-rose to-rp-love bg-clip-text text-7xl font-bold text-transparent md:my-1">
           LARRY
         </div>
         <div />
-        <div className="my-1 inline-block bg-gradient-to-r from-rp-foam to-rp-pine bg-clip-text text-7xl font-bold text-transparent">
+        <div className="my-0.5 inline-block bg-gradient-to-r from-rp-foam to-rp-pine bg-clip-text text-7xl font-bold text-transparent md:my-1">
           HUYNH
         </div>
-        <div className="my-1 text-rp-subtle">I am a</div>
-        <div className="my-1 text-lg font-semibold">
+        <div className="my-0.5 text-rp-subtle md:my-1">I am a</div>
+        <div className="my-0.5 text-lg font-semibold md:my-1">
           Software Engineering Graduate
         </div>
-        <div className="mt-8 flex flex-row text-sm text-rp-text">
+        <div className="mt-4 flex flex-row text-sm text-rp-text md:mt-8">
           <a href="#about">
             <div className="mr-6 flex flex-row rounded-lg bg-rp-overlay p-2 pr-4 hover:bg-rp-highmed">
               <AiOutlineInfoCircle className="mr-1 pt-1 text-xl" />
