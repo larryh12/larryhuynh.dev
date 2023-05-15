@@ -23,17 +23,17 @@ const About = () => {
       <div className="flex flex-col md:flex-row">
         <div className="flex-1 [&>*]:my-4">
           <FaQuoteLeft className="text-xl" />
-          <div>👋 Hi there, I'm Larry.</div>
+          <div>👋 Hi there, I&apos;m Larry.</div>
           <div>
-            🇦🇺 I'm a software engineering graduate based in QLD, Australia.
+            🇦🇺 I&apos;m a software engineering graduate based in QLD, Australia.
           </div>
           <div>
-            🔥 I enjoy learning about technology and science. I'm also an avid
-            problem solver, aspired to develop highly performant solutions that
-            focus on scalability and availability.
+            🔥 I enjoy learning about technology and science. I&apos;m also an
+            avid problem solver, aspired to develop highly performant solutions
+            that focus on scalability and availability.
           </div>
           <div>
-            💻 Currently I'm learning:
+            💻 Currently I&apos;m learning:
             <div className="mt-1 flex flex-wrap [&>div]:m-1 [&>div]:flex [&>div]:cursor-pointer [&>div]:flex-row [&>div]:rounded-xl [&>div]:bg-rp-overlay [&>div]:px-2 [&>div]:py-1 [&>div]:text-sm [&>div]:hover:bg-rp-highmed">
               <div className="">
                 <TbBrandReact className="pt-1 text-base" /> React
