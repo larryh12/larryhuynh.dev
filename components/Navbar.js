@@ -59,7 +59,7 @@ const Navbar = () => {
       <div
         className={`${
           toggle ? 'h-screen w-screen' : 'h-0 w-0'
-        } absolute right-0 top-20 z-10 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-3xl font-semibold transition-[width,height] md:hidden`}
+        } absolute right-0 top-20 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-3xl font-semibold md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
         <a

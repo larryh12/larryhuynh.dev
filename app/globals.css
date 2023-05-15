@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 .blob {
-  z-index: -1;
   animation: transform 25s ease-in-out infinite both alternate,
     movement 20s ease-in-out infinite both;
 }
