@@ -25,7 +25,8 @@ const About = () => {
           <FaQuoteLeft className="text-xl" />
           <div>👋 Hi there, I&apos;m Larry.</div>
           <div>
-            🇦🇺 I&apos;m a software engineering graduate based in QLD, Australia.
+            🇦🇺 I&apos;m a software engineering graduate based in Queensland,
+            Australia.
           </div>
           <div>
             🔥 I enjoy learning about technology and science. I&apos;m also an
@@ -33,7 +34,7 @@ const About = () => {
             that focus on scalability and availability.
           </div>
           <div>
-            💻 Currently I&apos;m learning:
+            💻 I&apos;m currently learning:
             <div className="mt-1 flex flex-wrap [&>div]:m-1 [&>div]:flex [&>div]:cursor-pointer [&>div]:flex-row [&>div]:rounded-xl [&>div]:bg-rp-overlay [&>div]:px-2 [&>div]:py-1 [&>div]:text-sm">
               <div className="hover:bg-rp-highmed">
                 <TbBrandReact className="pt-1 text-base" /> React
@@ -61,7 +62,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="mx-4 hidden w-0.5 bg-gradient-to-b from-rp-rose to-rp-pine md:block"></div>
+        <div className="mx-12 hidden w-0.5 bg-gradient-to-b from-rp-rose to-rp-pine md:block"></div>
         <div className="flex-1">
           <div className="my-2 mt-4 text-lg font-semibold">Qualifications</div>
           <div className="flex justify-between text-base font-medium">
@@ -79,7 +80,7 @@ const About = () => {
             <div>• Bachelor of Information Technology</div>
             <div>• Awarded with Distinction GPA: 6.83 / 7</div>
             <div>
-              • Award for Academic Excellence
+              • Awarded for Academic Excellence
               <br />
               <a
                 href="https://www.credly.com/badges/295dfe3f-f2f0-4a3b-ae0a-f0acb3824c9c/"
