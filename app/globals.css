@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .blob {
-  animation: transform 25s ease-in-out infinite both alternate,
-    movement 20s ease-in-out infinite both;
+  animation: transform 25s ease-in-out infinite both alternate;
+  /* movement 20s ease-in-out infinite both; */
 }
 
 @keyframes transform {
