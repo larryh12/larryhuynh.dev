@@ -49,12 +49,12 @@ const Navbar = () => {
         id="nav__menu"
         className={`${
           toggle ? 'w-screen' : 'w-0'
-        } absolute right-0 grid min-h-screen place-items-center overflow-hidden bg-rp-base text-3xl font-semibold transition-all md:hidden`}
+        } absolute right-0 flex min-h-screen justify-center overflow-hidden bg-rp-base text-3xl font-semibold transition-all md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
         <div
           id="nav__menu__links"
-          className="space-y-6 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 active:[&>a]:text-rp-love"
+          className="space-y-6 pt-12 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 active:[&>a]:text-rp-love"
         >
           <a href="#home">
             <AiOutlineHome />
