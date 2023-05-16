@@ -34,7 +34,7 @@ const Navbar = () => {
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#contacts">Contacts</a>
         </div>
 
         <div
@@ -72,24 +72,27 @@ const Navbar = () => {
             <AiOutlineDesktop />
             <span>Projects</span>
           </a>
-          <a href="#contact">
+          <a href="#contacts">
             <AiOutlineMessage />
-            <span>Contact</span>
+            <span>Contacts</span>
           </a>
-        </div>
-        <div
-          id="nav__menu__icons"
-          className="flex space-x-4 active:[&>a]:text-rp-love"
-        >
-          <a href="mailto:larry.huynh.dev@outlook.com">
-            <AiFillMail />
-          </a>
-          <a href="https://www.linkedin.com/in/larry-huynh-dev" target="_blank">
-            <AiFillLinkedin />
-          </a>
-          <a href="https://github.com/larryh12" target="_blank">
-            <AiFillGithub />
-          </a>
+          <div
+            id="nav__menu__icons"
+            className="flex justify-center space-x-4 pt-6 active:[&>a]:text-rp-love"
+          >
+            <a href="mailto:larry.huynh.dev@outlook.com">
+              <AiFillMail />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/larry-huynh-dev"
+              target="_blank"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/larryh12" target="_blank">
+              <AiFillGithub />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
