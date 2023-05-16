@@ -26,34 +26,26 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav id="nav" className="flex justify-between">
-      <a href="/" className="h-12 w-24 cursor-pointer">
-        <Image src={logo} alt="logo" />
-      </a>
+    <nav id="nav">
+      <div id="nav__topbar" className="flex items-center justify-between">
+        <a href="/" className="w-24 cursor-pointer">
+          <Image src={logo} alt="logo" />
+        </a>
 
-      <div className="hidden text-lg font-semibold md:flex">
-        <a href="#home" className="mr-4 hover:text-rp-love">
-          Home
-        </a>
-        <a href="#about" className="mr-4 hover:text-rp-love">
-          About
-        </a>
-        <a href="#experience" className="mr-4 hover:text-rp-love">
-          Experience
-        </a>
-        <a href="#projects" className="mr-4 hover:text-rp-love">
-          Projects
-        </a>
-        <a href="#contact" className="hover:text-rp-love">
-          Contact
-        </a>
-      </div>
+        <div className="hidden space-x-4 text-lg font-semibold md:block hover:[&>a]:text-rp-love">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-      <div
-        className="flex cursor-pointer text-4xl md:hidden"
-        onClick={() => setToggle((prev) => !prev)}
-      >
-        {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
+        <div
+          className="block cursor-pointer text-4xl md:hidden"
+          onClick={() => setToggle((prev) => !prev)}
+        >
+          {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
+        </div>
       </div>
 
       <div
