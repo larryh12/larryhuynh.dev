@@ -8,15 +8,12 @@ import {
   AiOutlineClose,
   AiOutlineHome,
   AiOutlineInfoCircle,
-  AiOutlineLaptop,
   AiOutlineCode,
-  AiOutlineRobot,
   AiOutlineDesktop,
-  AiOutlineLayout,
   AiOutlineMessage,
-  AiOutlineMail,
-  AiOutlineLinkedin,
-  AiOutlineGithub,
+  AiFillMail,
+  AiFillLinkedin,
+  AiFillGithub,
 } from 'react-icons/ai';
 
 import Image from 'next/image';
@@ -49,90 +46,51 @@ const Navbar = () => {
       </div>
 
       <div
+        id="nav__menu"
         className={`${
-          toggle ? 'h-screen w-screen' : 'h-0 w-0'
-        } absolute right-0 top-20 z-50 max-w-screen-md flex-col items-start overflow-hidden bg-rp-base p-4 text-3xl font-semibold transition-all md:hidden`}
+          toggle ? 'w-screen' : 'w-0'
+        } absolute right-0 grid min-h-screen place-items-center overflow-hidden bg-rp-base text-3xl font-semibold transition-all md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
-        <a
-          href="#home"
-          className="flex w-full flex-row rounded-xl px-4 py-3 active:bg-rp-overlay active:text-rp-love"
+        <div
+          id="nav__menu__links"
+          className="space-y-6 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 active:[&>a]:text-rp-love"
         >
-          <AiOutlineHome className="mr-4 text-4xl" />
-          Home
-        </a>
-        <a
-          href="#about"
-          className="flex w-full flex-row rounded-xl px-4 py-3 active:bg-rp-overlay active:text-rp-love"
+          <a href="#home">
+            <AiOutlineHome />
+            <span>Home</span>
+          </a>
+          <a href="#about">
+            <AiOutlineInfoCircle />
+            <span>About</span>
+          </a>
+          <a href="#experience">
+            <AiOutlineCode />
+            <span>Experience</span>
+          </a>
+          <a href="#projects">
+            <AiOutlineDesktop />
+            <span>Projects</span>
+          </a>
+          <a href="#contact">
+            <AiOutlineMessage />
+            <span>Contact</span>
+          </a>
+        </div>
+        <div
+          id="nav__menu__icons"
+          className="flex space-x-4 active:[&>a]:text-rp-love"
         >
-          <AiOutlineInfoCircle className="mr-4 text-4xl" />
-          About
-        </a>
-        <a
-          href="#experience"
-          className="flex w-full flex-row rounded-xl px-4 py-3 active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineLaptop className="mr-4 text-4xl" />
-          Experience
-        </a>
-        <a
-          href="#projects"
-          className="flex w-full flex-row rounded-xl px-4 py-3 active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineCode className="mr-4 text-4xl" />
-          Projects
-        </a>
-        <a
-          href="#gptools"
-          className="flex w-full flex-row rounded-xl px-4 py-3 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineRobot className="mr-4 text-2xl" />
-          GPTools
-        </a>
-        <a
-          href="#webapps"
-          className="flex w-full flex-row rounded-xl px-4 py-3 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineDesktop className="mr-4 text-2xl" />
-          Web Apps
-        </a>
-        <a
-          href="#frontend"
-          className="flex w-full flex-row rounded-xl px-4 py-3 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineLayout className="mr-4 text-2xl" />
-          Frontend Sites
-        </a>
-        <a
-          href="#contact"
-          className="flex w-full flex-row rounded-xl px-4 py-3 active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineMessage className="mr-4 text-4xl" />
-          Contact
-        </a>
-        <a
-          href="mailto:larry.huynh.dev@outlook.com"
-          className="flex w-full flex-row rounded-xl px-4 py-3 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineMail className="mr-4 text-2xl" />
-          larry.huynh.dev@outlook.com
-        </a>
-        <a
-          href="https://www.linkedin.com/in/larry-huynh-dev"
-          target="_blank"
-          className="flex w-full flex-row rounded-xl px-4 py-3 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineLinkedin className="mr-4 text-2xl" />
-          larry-huynh-dev
-        </a>
-        <a
-          href="https://github.com/larryh12"
-          target="_blank"
-          className="flex w-full flex-row rounded-xl px-4 py-3 pl-8 text-base font-normal active:bg-rp-overlay active:text-rp-love"
-        >
-          <AiOutlineGithub className="mr-4 text-2xl" />
-          larryh12
-        </a>
+          <a href="mailto:larry.huynh.dev@outlook.com">
+            <AiFillMail />
+          </a>
+          <a href="https://www.linkedin.com/in/larry-huynh-dev" target="_blank">
+            <AiFillLinkedin />
+          </a>
+          <a href="https://github.com/larryh12" target="_blank">
+            <AiFillGithub />
+          </a>
+        </div>
       </div>
     </nav>
   );
