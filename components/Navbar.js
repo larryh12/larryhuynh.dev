@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav id="nav">
-      <div id="nav__topbar" className="flex items-center justify-between">
+      <div className="nav__topbar flex items-center justify-between">
         <a href="/" className="w-24 cursor-pointer">
           <Image src={logo} alt="logo" />
         </a>
@@ -46,16 +46,12 @@ const Navbar = () => {
       </div>
 
       <div
-        id="nav__menu"
-        className={`${
+        className={`nav__menu ${
           toggle ? 'w-screen' : 'w-0'
         } absolute right-0 flex min-h-screen justify-center overflow-hidden bg-rp-base text-3xl font-semibold transition-all md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
-        <div
-          id="nav__menu__links"
-          className="space-y-6 pt-12 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 active:[&>a]:text-rp-love"
-        >
+        <div className="nav__menu__links space-y-6 pt-12 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 active:[&>a]:text-rp-love">
           <a href="#home">
             <AiOutlineHome />
             <span>Home</span>
@@ -76,10 +72,7 @@ const Navbar = () => {
             <AiOutlineMessage />
             <span>Contacts</span>
           </a>
-          <div
-            id="nav__menu__icons"
-            className="flex justify-center space-x-4 pt-6 active:[&>a]:text-rp-love"
-          >
+          <div className="nav__menu__icons flex justify-center space-x-4 pt-6 active:[&>a]:text-rp-love">
             <a href="mailto:larry.huynh.dev@outlook.com">
               <AiFillMail />
             </a>
