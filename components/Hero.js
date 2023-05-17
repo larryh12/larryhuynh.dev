@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
       <div className="home__avatar__container flex flex-1 items-center justify-center">
         <div className="home__avatar__wrapper max-w-[66%]">
-          <div className="home__avatar__blob overflow-hidden border border-rp-text bg-rp-rose">
+          <div className="home__avatar__blob overflow-hidden border-rp-text bg-rp-rose">
             <Image src={avatar} alt="avatar" />
           </div>
         </div>
