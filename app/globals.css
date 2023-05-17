@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .home__avatar__blob {
-  animation: transform 25s ease-in-out infinite both alternate;
+  animation: blob__transform 30s ease-in-out infinite both alternate;
 }
 
-@keyframes transform {
+@keyframes blob__transform {
   0%,
   100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
