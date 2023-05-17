@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html class="scroll-smooth" lang="en">
       <body className="flex justify-center bg-rp-base text-rp-text">
         <main className={`${inter.className} max-w-screen-lg p-8`}>
           <Navbar />
