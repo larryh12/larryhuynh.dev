@@ -27,7 +27,7 @@ const Hero = () => {
               Software Engineering Graduate
             </div>
           </div>
-          <div className="home__text__lower flex space-x-4 text-sm text-rp-text [&>a]:flex [&>a]:items-center [&>a]:space-x-1 [&>a]:rounded-lg [&>a]:bg-rp-overlay [&>a]:px-3 [&>a]:py-2 [&>a]:transition hover:[&>a]:scale-105 hover:[&>a]:bg-rp-highmed">
+          <div className="home__text__lower flex space-x-4 text-sm text-rp-text [&>a]:flex [&>a]:items-center [&>a]:space-x-1 [&>a]:rounded-xl [&>a]:bg-rp-overlay [&>a]:px-3 [&>a]:py-2 [&>a]:transition hover:[&>a]:scale-105 hover:[&>a]:bg-rp-highmed">
             <a href="#about">
               <AiOutlineInfoCircle />
               <span>About me</span>
