@@ -20,7 +20,13 @@ import Image from 'next/image';
 import logo from '@/public/logo.svg';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [NavToggle, setNavToggle] = useState(false);
+  const [ThemeToggle, setThemeToggle] = useState(false);
+
+  const changeTheme = (theme) => {
+    document.body.classList.remove('mocha', 'macchiato', 'frappe', 'latte');
+    document.body.classList.add(theme);
+  };
 
   return (
     <nav id="nav">
@@ -29,7 +35,7 @@ const Navbar = () => {
           <Image src={logo} alt="logo" />
         </a>
 
-        <div className="hidden space-x-4 text-lg font-semibold md:block [&>a]:transition hover:[&>a]:text-rosewater hover:[&>a]:underline">
+        <div className="hidden space-x-4 text-lg font-semibold md:block [&>a]:inline-block [&>a]:transition hover:[&>a]:scale-105 hover:[&>a]:text-rosewater">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
@@ -39,17 +45,17 @@ const Navbar = () => {
 
         <div
           className="block cursor-pointer text-4xl md:hidden"
-          onClick={() => setToggle((prev) => !prev)}
+          onClick={() => setNavToggle((prev) => !prev)}
         >
-          {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
+          {NavToggle ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
       </div>
 
       <div
         className={`nav__menu ${
-          toggle ? 'w-screen' : 'w-0'
+          NavToggle ? 'w-screen' : 'w-0'
         } absolute right-0 flex min-h-screen justify-center overflow-hidden bg-base text-3xl font-semibold transition-all md:hidden`}
-        onClick={() => setToggle((prev) => !prev)}
+        onClick={() => setNavToggle((prev) => !prev)}
       >
         <div className="nav__menu__links pt-8 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 [&>a]:rounded-3xl [&>a]:px-4 [&>a]:py-3 [&>a]:transition hover:[&>a]:scale-110 hover:[&>a]:text-rosewater">
           <a href="#home">
@@ -88,6 +94,46 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* <div
+        className={`theme_menu ${
+          ThemeToggle ? 'block' : 'hidden'
+        } absolute flex flex-col items-end text-lg font-semibold [&>div]:flex [&>div]:cursor-pointer [&>div]:items-center [&>div]:transition hover:[&>div]:scale-105 hover:[&>div]:text-rosewater [&>span]:[&>div]:ml-1.5 [&>span]:[&>div]:h-4 [&>span]:[&>div]:w-4 [&>span]:[&>div]:rounded-full [&>span]:[&>div]:border [&>span]:[&>div]:border-text [&>span]:[&>div]:bg-base`}
+        onClick={() => setThemeToggle((prev) => !prev)}
+      >
+        <div
+          value="mocha"
+          onClick={(e) => {
+            changeTheme(e.target.getAttribute('value'));
+          }}
+        >
+          Mocha <span className="mocha" />
+        </div>
+        <div
+          value="macchiato"
+          onClick={(e) => {
+            changeTheme(e.target.getAttribute('value'));
+          }}
+        >
+          Macchiato <span className="macchiato" />
+        </div>
+        <div
+          value="frappe"
+          onClick={(e) => {
+            changeTheme(e.target.getAttribute('value'));
+          }}
+        >
+          Frappé <span className="frappe" />
+        </div>
+        <div
+          value="latte"
+          onClick={(e) => {
+            changeTheme(e.target.getAttribute('value'));
+          }}
+        >
+          Latte <span className="latte" />
+        </div>
+      </div> */}
     </nav>
   );
 };
