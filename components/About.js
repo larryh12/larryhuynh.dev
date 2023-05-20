@@ -15,9 +15,9 @@ const About = () => {
     <section id="about" className="flex min-h-screen items-center">
       <div className="about__wrapper flex flex-col">
         <div className="about__heading text-center">
-          <div className="inline-block bg-gradient-to-r from-rp-rose to-rp-pine bg-clip-text text-center text-2xl font-bold text-transparent">
+          <div className="inline-block bg-gradient-to-r from-maroon to-sapphire bg-clip-text text-center text-2xl font-bold text-transparent">
             <span>About</span>
-            <div className="h-0.5 bg-gradient-to-r from-rp-rose to-rp-pine" />
+            <div className="h-0.5 bg-gradient-to-r from-maroon to-sapphire" />
           </div>
         </div>
 
@@ -36,7 +36,7 @@ const About = () => {
             </div>
             <div className="about__main__quotes__skills">
               <div>💻 I&apos;m currently learning:</div>
-              <div className="mt-1 flex flex-wrap [&>div]:mb-2 [&>div]:mr-1.5 [&>div]:flex [&>div]:cursor-pointer [&>div]:items-center [&>div]:space-x-1 [&>div]:rounded-xl [&>div]:bg-rp-overlay [&>div]:px-2 [&>div]:py-1 [&>div]:text-sm [&>div]:transition hover:[&>div]:scale-105 hover:[&>div]:bg-rp-highmed">
+              <div className="mt-1 flex flex-wrap [&>div]:mb-2 [&>div]:mr-1.5 [&>div]:flex [&>div]:cursor-pointer [&>div]:items-center [&>div]:space-x-1 [&>div]:rounded-xl [&>div]:bg-surface0 [&>div]:px-2 [&>div]:py-1 [&>div]:text-sm [&>div]:transition hover:[&>div]:scale-105 hover:[&>div]:bg-overlay0">
                 <div>
                   <TbBrandReact /> <span>React</span>
                 </div>
@@ -59,7 +59,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about__main__divider hidden w-0.5 bg-gradient-to-b from-rp-rose to-rp-pine md:block" />
+          <div className="about__main__divider hidden w-0.5 bg-gradient-to-b from-maroon to-sapphire md:block" />
 
           <div className="about__main__qual flex-1 space-y-4 pt-8">
             <div className="amq__heading text-xl font-semibold">
@@ -72,12 +72,12 @@ const About = () => {
                   <a
                     href="https://cricos.education.gov.au/Institution/InstitutionDetails.aspx?ProviderCode=00233E"
                     target="_blank"
-                    className="flex items-center space-x-1 text-xs text-rp-subtle underline"
+                    className="flex items-center space-x-1 text-xs text-overlay1 underline"
                   >
                     <span>CRICOS: 00233E</span> <FaExternalLinkAlt />
                   </a>
                 </div>
-                <div className="amq__gu__title__year text-rp-gold">
+                <div className="amq__gu__title__year text-yellow">
                   2019 - 2022
                 </div>
               </div>
@@ -114,7 +114,7 @@ const About = () => {
               <div className="amq__cert__title text-lg font-medium">
                 Certifications
               </div>
-              <div className="amq__cert__content [&>div]:flex [&>div]:justify-between [&>a]:[&>div]:text-rp-gold">
+              <div className="amq__cert__content [&>div]:flex [&>div]:justify-between [&>a]:[&>div]:text-yellow">
                 <div>
                   <div>• PTE Academic</div> <a>Score: 90 · Mar 2023</a>
                 </div>

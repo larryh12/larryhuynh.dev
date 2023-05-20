@@ -29,7 +29,7 @@ const Navbar = () => {
           <Image src={logo} alt="logo" />
         </a>
 
-        <div className="hidden space-x-4 text-lg font-semibold md:block [&>a]:transition hover:[&>a]:text-rp-love hover:[&>a]:underline">
+        <div className="hidden space-x-4 text-lg font-semibold md:block [&>a]:transition hover:[&>a]:text-rosewater hover:[&>a]:underline">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
@@ -48,10 +48,10 @@ const Navbar = () => {
       <div
         className={`nav__menu ${
           toggle ? 'w-screen' : 'w-0'
-        } absolute right-0 flex min-h-screen justify-center overflow-hidden bg-rp-base text-3xl font-semibold transition-all md:hidden`}
+        } absolute right-0 flex min-h-screen justify-center overflow-hidden bg-base text-3xl font-semibold transition-all md:hidden`}
         onClick={() => setToggle((prev) => !prev)}
       >
-        <div className="nav__menu__links pt-8 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 [&>a]:rounded-3xl [&>a]:px-4 [&>a]:py-3 [&>a]:transition hover:[&>a]:scale-110 hover:[&>a]:bg-rp-overlay hover:[&>a]:text-rp-love">
+        <div className="nav__menu__links pt-8 [&>a]:flex [&>a]:items-center [&>a]:space-x-4 [&>a]:rounded-3xl [&>a]:px-4 [&>a]:py-3 [&>a]:transition hover:[&>a]:scale-110 hover:[&>a]:text-rosewater">
           <a href="#home">
             <AiOutlineHome />
             <span>Home</span>
@@ -72,7 +72,7 @@ const Navbar = () => {
             <AiOutlineMessage />
             <span>Contacts</span>
           </a>
-          <div className="nav__menu__icons mt-6 flex justify-center [&>a]:rounded-xl [&>a]:p-2 [&>a]:transition hover:[&>a]:scale-125 hover:[&>a]:bg-rp-overlay hover:[&>a]:text-rp-love">
+          <div className="nav__menu__icons mt-6 flex justify-center [&>a]:rounded-xl [&>a]:p-2 [&>a]:transition hover:[&>a]:scale-125 hover:[&>a]:text-rosewater">
             <a href="mailto:larry.huynh.dev@outlook.com">
               <AiFillMail />
             </a>
