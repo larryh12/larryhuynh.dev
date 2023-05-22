@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html data-theme="dracula" className="scroll-smooth" lang="en">
+    <html className="scroll-smooth" lang="en">
       <body className="m-auto max-w-screen-lg">{children}</body>
     </html>
   );
