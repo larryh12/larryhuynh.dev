@@ -12,7 +12,7 @@ import { AiFillMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const Sidebar = () => {
   return (
-    <div className="w-96 max-w-[75vw] bg-base-300 p-6">
+    <div className="w-96 max-w-[75vw] bg-base-100 p-6">
       <ul className="menu mx-auto my-6 w-fit text-2xl">
         <li className="hover-bordered">
           <a href="#home">

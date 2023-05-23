@@ -31,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar fixed top-0 max-w-screen-lg bg-base-200">
+    <div className="navbar fixed top-0 max-w-screen-lg bg-base-100">
       <div className="flex-1">
         <a href="/" className="btn-ghost btn">
           <svg
@@ -89,7 +89,7 @@ const Navbar = () => {
             </span>
           </label>
 
-          <div className="dropdown-content h-80 max-h-[50vh] overflow-y-auto rounded-xl bg-base-300">
+          <div className="dropdown-content h-80 max-h-[50vh] overflow-y-auto rounded-xl bg-base-200">
             <div className="flex flex-col gap-3 p-3" tabindex="0">
               {themes.map((theme, index) => (
                 <button
