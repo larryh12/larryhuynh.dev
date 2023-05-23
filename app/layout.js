@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'LARRY HUYNH',
+  title: 'larryhuynh.dev',
   description: "Larry Huynh's Personal Website",
 };
 
