@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col scroll-smooth">
         <Navbar />
-        <div id="home" className="min-h-screen bg-primary" />
+        <Hero />
         <div id="about" className="min-h-screen bg-secondary" />
         <div id="experience" className="min-h-screen bg-primary" />
         <div id="projects" className="min-h-screen bg-secondary" />

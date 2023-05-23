@@ -16,13 +16,13 @@ import {
 } from 'react-icons/hi';
 
 const themes = [
-  'catppuccin-mocha',
-  'catppuccin-macchiato',
-  'catppuccin-frappe',
-  'catppuccin-latte',
-  'rosepine-night',
-  'rosepine-moon',
   'rosepine-dawn',
+  'rosepine-moon',
+  'rosepine-night',
+  'catppuccin-latte',
+  'catppuccin-frappe',
+  'catppuccin-macchiato',
+  'catppuccin-mocha',
 ];
 
 const Navbar = () => {
