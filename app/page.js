@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import Hero from '@/components/Hero';
+import About from '@/components/About';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <div className="drawer-content flex flex-col scroll-smooth">
         <Navbar />
         <Hero />
-        <div id="about" className="min-h-screen bg-secondary" />
+        <About />
         <div id="experience" className="min-h-screen bg-primary" />
         <div id="projects" className="min-h-screen bg-secondary" />
       </div>
