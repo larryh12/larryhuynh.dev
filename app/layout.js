@@ -1,8 +1,4 @@
 import './globals.css';
-import Navbar from '@/components/Navbar';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'LARRY HUYNH',
@@ -11,13 +7,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="scroll-smooth" lang="en">
-      <body className="mocha flex justify-center bg-base text-text transition-colors">
-        <main className={`${inter.className} max-w-screen-lg p-8`}>
-          <Navbar />
-          {children}
-        </main>
-      </body>
+    <html lang="en">
+      <body className="m-auto max-w-screen-lg">{children}</body>
     </html>
   );
 }
