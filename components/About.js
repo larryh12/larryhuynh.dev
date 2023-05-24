@@ -12,8 +12,8 @@ import {
 
 const About = () => {
   return (
-    <section id="about" className="m-8 flex min-h-screen items-center">
-      <div className="about__wrapper flex flex-col">
+    <section id="about" className="flex min-h-screen p-8">
+      <div className="about__wrapper m-auto flex flex-col">
         <div className="about__heading text-center">
           <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
             <p>About</p>
@@ -80,28 +80,26 @@ const About = () => {
               <ul className="amq__gu__content">
                 <li>• Bachelor of Information Technology</li>
                 <li>• Awarded with Distinction GPA: 6.83 / 7</li>
-                <li>
-                  • Awarded for Academic Excellence
-                  <p className="flex gap-2 [&>a]:flex [&>a]:items-center [&>a]:gap-1 [&>a]:underline">
-                    <a
-                      href="https://www.credly.com/badges/295dfe3f-f2f0-4a3b-ae0a-f0acb3824c9c/"
-                      target="_blank"
-                    >
-                      2019 <FaExternalLinkAlt />
-                    </a>
-                    <a
-                      href="https://www.credly.com/badges/87f3870c-20a6-47ab-b565-7202dc077208/"
-                      target="_blank"
-                    >
-                      2020 <FaExternalLinkAlt />
-                    </a>
-                    <a
-                      href="https://www.credly.com/badges/f6977589-9622-4dd3-9d50-53289877830d/"
-                      target="_blank"
-                    >
-                      2022 <FaExternalLinkAlt />
-                    </a>
-                  </p>
+                <li className="[&>a]:ml-1.5 [&>a]:inline-flex [&>a]:items-center [&>a]:gap-0.5 [&>a]:underline">
+                  • Awarded for Academic Excellence in:
+                  <a
+                    href="https://www.credly.com/badges/295dfe3f-f2f0-4a3b-ae0a-f0acb3824c9c/"
+                    target="_blank"
+                  >
+                    2019 <FaExternalLinkAlt className="text-xs" />
+                  </a>
+                  <a
+                    href="https://www.credly.com/badges/87f3870c-20a6-47ab-b565-7202dc077208/"
+                    target="_blank"
+                  >
+                    2020 <FaExternalLinkAlt className="text-xs" />
+                  </a>
+                  <a
+                    href="https://www.credly.com/badges/f6977589-9622-4dd3-9d50-53289877830d/"
+                    target="_blank"
+                  >
+                    2022 <FaExternalLinkAlt className="text-xs" />
+                  </a>
                 </li>
               </ul>
             </div>

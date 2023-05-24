@@ -6,14 +6,15 @@ import {
   HiOutlineCode,
   HiOutlineUserCircle,
   HiOutlineChat,
+  HiOutlineDownload,
 } from 'react-icons/hi';
 
 import { AiFillMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const Sidebar = () => {
   return (
-    <div className="w-96 max-w-[75vw] bg-base-100 p-6">
-      <ul className="menu mx-auto my-6 w-fit text-2xl">
+    <div className="w-96 max-w-[75vw] space-y-8 bg-base-100 p-8">
+      <ul className="menu m-auto w-fit text-2xl">
         <li className="hover-bordered">
           <a href="#home">
             <HiOutlineHome />
@@ -45,7 +46,7 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
-      <ul className="mx-auto flex w-fit [&>li]:btn-ghost [&>li]:btn [&>li]:text-2xl">
+      <ul className="m-auto flex w-fit gap-2 [&>li]:btn-sm [&>li]:btn [&>li]:text-2xl">
         <li>
           <a href="mailto:larry.huynh.dev@outlook.com">
             <AiFillMail />
@@ -62,6 +63,15 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+      <div className="m-auto w-fit">
+        <a
+          className="btn gap-2"
+          href="https://www.linkedin.com/in/larry-huynh-dev/"
+          target="_blank"
+        >
+          <HiOutlineDownload className="text-xl" /> Résumé / CV
+        </a>
+      </div>
     </div>
   );
 };

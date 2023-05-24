@@ -2,6 +2,9 @@ import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
+import Contacts from '@/components/Contacts';
 
 export default function Home() {
   return (
@@ -11,8 +14,9 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
-        <div id="experience" className="min-h-screen bg-primary" />
-        <div id="projects" className="min-h-screen bg-secondary" />
+        <Experience />
+        <Projects />
+        <Contacts />
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
