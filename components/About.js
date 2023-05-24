@@ -71,7 +71,7 @@ const About = () => {
                   <a
                     href="https://cricos.education.gov.au/Institution/InstitutionDetails.aspx?ProviderCode=00233E"
                     target="_blank"
-                    className="flex items-center gap-0.5 text-xs underline opacity-50"
+                    className="flex items-center gap-0.5 text-xs font-extralight underline"
                   >
                     CRICOS: 00233E <HiExternalLink />
                   </a>

@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="home__text__container flex flex-1 items-start justify-center lg:items-center">
         <div className="home__text__wrapper space-y-8">
           <div className="home__text__upper space-y-1">
-            <p className="opacity-50">Hi, my name is</p>
+            <p className="font-light">Hi, my name is</p>
             <p className="inline-block bg-gradient-to-r from-primary to-primary-focus bg-clip-text text-7xl font-extrabold text-transparent">
               LARRY
             </p>
@@ -22,7 +22,7 @@ const Hero = () => {
             <p className="inline-block bg-gradient-to-r from-secondary to-secondary-focus bg-clip-text text-7xl font-extrabold text-transparent">
               HUYNH
             </p>
-            <p className="opacity-50">I am a</p>
+            <p className="font-light">I am a</p>
             <p className="text-lg font-semibold">Graduate Software Developer</p>
           </div>
           <div className="home__text__lower flex justify-between [&>a]:btn-sm [&>a]:btn [&>a]:gap-1">
