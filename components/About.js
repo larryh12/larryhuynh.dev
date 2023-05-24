@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { FaQuoteLeft, FaExternalLinkAlt } from 'react-icons/fa';
+import { HiExternalLink } from 'react-icons/hi';
+import { ImQuotesLeft } from 'react-icons/im';
 import {
   SiReact,
   SiNextdotjs,
@@ -23,7 +24,7 @@ const About = () => {
 
         <div className="about__main flex flex-col lg:flex-row lg:gap-8">
           <div className="about__main__quotes flex-1 space-y-4">
-            <FaQuoteLeft className="text-xl" />
+            <ImQuotesLeft className="text-xl" />
             <p>👋 Hi there, I&apos;m Larry.</p>
             <p>
               🇦🇺 I&apos;m a graduate software developer based in Queensland,
@@ -70,9 +71,9 @@ const About = () => {
                   <a
                     href="https://cricos.education.gov.au/Institution/InstitutionDetails.aspx?ProviderCode=00233E"
                     target="_blank"
-                    className="flex items-center gap-1 text-xs underline opacity-50"
+                    className="flex items-center gap-0.5 text-xs underline opacity-50"
                   >
-                    CRICOS: 00233E <FaExternalLinkAlt />
+                    CRICOS: 00233E <HiExternalLink />
                   </a>
                 </div>
                 <p className="amq__gu__title__year text-accent">2019 - 2022</p>
@@ -86,19 +87,19 @@ const About = () => {
                     href="https://www.credly.com/badges/295dfe3f-f2f0-4a3b-ae0a-f0acb3824c9c/"
                     target="_blank"
                   >
-                    2019 <FaExternalLinkAlt className="text-xs" />
+                    2019 <HiExternalLink className="text-sm" />
                   </a>
                   <a
                     href="https://www.credly.com/badges/87f3870c-20a6-47ab-b565-7202dc077208/"
                     target="_blank"
                   >
-                    2020 <FaExternalLinkAlt className="text-xs" />
+                    2020 <HiExternalLink className="text-sm" />
                   </a>
                   <a
                     href="https://www.credly.com/badges/f6977589-9622-4dd3-9d50-53289877830d/"
                     target="_blank"
                   >
-                    2022 <FaExternalLinkAlt className="text-xs" />
+                    2022 <HiExternalLink className="text-sm" />
                   </a>
                 </li>
               </ul>

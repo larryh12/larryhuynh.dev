@@ -5,14 +5,14 @@ import { useEffect } from 'react';
 import { themeChange } from 'theme-change';
 
 import {
-  HiOutlineMenuAlt3,
+  HiMenuAlt3,
   HiOutlineColorSwatch,
   HiOutlineHome,
   HiOutlineDesktopComputer,
   HiOutlineCode,
   HiOutlineUserCircle,
   HiOutlineChat,
-  HiOutlineChevronDown,
+  HiChevronDown,
 } from 'react-icons/hi';
 
 const themes = [
@@ -85,7 +85,7 @@ const Navbar = () => {
             <HiOutlineColorSwatch className="text-3xl lg:text-sm" />
             <span className="hidden gap-3 sm:inline-flex">
               Themes
-              <HiOutlineChevronDown />
+              <HiChevronDown />
             </span>
           </label>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
           htmlFor="my-drawer"
           className="btn-ghost btn-square btn text-3xl lg:hidden"
         >
-          <HiOutlineMenuAlt3 />
+          <HiMenuAlt3 />
         </label>
       </div>
     </div>

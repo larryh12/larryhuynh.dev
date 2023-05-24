@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import avatar from '@/public/avatar.png';
 
-import { HiChevronDoubleDown, HiOutlineDownload } from 'react-icons/hi';
+import { HiChevronDoubleDown, HiDownload } from 'react-icons/hi';
 
 const Hero = () => {
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/larry-huynh-dev/"
               target="_blank"
             >
-              <HiOutlineDownload />
+              <HiDownload />
               Résumé / CV
             </a>
           </div>
