@@ -19,7 +19,7 @@ const Contacts = () => {
           <p className="text-center text-xl font-semibold">
             🤙 Get in touch with me!
           </p>
-          <div className="card-normal card static bg-neutral shadow-2xl sm:card-side">
+          <div className="card card-normal static bg-neutral shadow-2xl sm:card-side">
             <figure>
               <Image
                 src={avatar}
@@ -27,7 +27,7 @@ const Contacts = () => {
                 className="m-8 mb-0 w-52 rounded-xl bg-base-200 sm:mb-8 sm:mr-0"
               />
             </figure>
-            <ul className="card-body justify-center [&>a]:flex [&>a]:items-center [&>a]:gap-2 [&>a]:border-b [&>a]:border-neutral-content [&>a]:py-2 [&>a]:font-medium sm:[&>a]:text-xl sm:[&>a]:font-semibold">
+            <ul className="card-body justify-center [&>a]:flex [&>a]:items-center [&>a]:gap-2 [&>a]:border-b [&>a]:border-neutral-content [&>a]:py-2 [&>a]:font-medium sm:[&>a]:text-lg sm:[&>a]:font-semibold">
               <a>
                 <FaUser /> Larry Huynh
               </a>
