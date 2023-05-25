@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <section id="about" className="flex min-h-screen px-8 py-16">
+    <section id="about" className="my-8 flex min-h-screen px-8 py-16">
       <div className="about__wrapper m-auto flex flex-col">
         <div className="about__heading text-center">
           <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
