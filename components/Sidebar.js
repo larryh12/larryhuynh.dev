@@ -35,7 +35,6 @@ const Sidebar = () => {
             </svg>
           </a>
         </div>
-
         <div className="flex-none">
           <label
             htmlFor="my-drawer"
@@ -79,25 +78,16 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
-        <ul className="m-auto flex w-fit gap-2 [&>li]:btn-sm [&>li]:btn [&>li]:text-2xl">
-          <li>
-            <a href="mailto:larry.huynh.dev@outlook.com">
-              <AiFillMail />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/larry-huynh-dev"
-              target="_blank"
-            >
-              <AiFillLinkedin />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/larryh12" target="_blank">
-              <AiFillGithub />
-            </a>
-          </li>
+        <ul className="m-auto flex w-fit gap-2 [&>a]:btn-sm [&>a]:btn [&>a]:text-2xl">
+          <a href="mailto:larry.huynh.dev@outlook.com">
+            <AiFillMail />
+          </a>
+          <a href="https://www.linkedin.com/in/larry-huynh-dev" target="_blank">
+            <AiFillLinkedin />
+          </a>
+          <a href="https://github.com/larryh12" target="_blank">
+            <AiFillGithub />
+          </a>
         </ul>
         <div className="m-auto w-fit">
           <a

@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <section id="about" className="my-8 flex min-h-screen px-8 py-16">
+    <section id="about" className="flex px-8 py-16">
       <div className="about__wrapper m-auto flex flex-col">
         <div className="about__heading text-center">
           <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
@@ -22,7 +22,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about__main flex flex-col md:flex-row md:gap-8">
+        <div className="about__main flex flex-col sm:flex-row sm:gap-8">
           <div className="about__main__quotes flex-1 space-y-4">
             <ImQuotesLeft className="text-xl" />
             <p>👋 Hi there, I&apos;m Larry.</p>
@@ -37,7 +37,7 @@ const About = () => {
             </p>
             <div className="about__main__quotes__skills">
               <p>💻 I&apos;m currently learning:</p>
-              <div className="mt-2 flex flex-wrap gap-2 [&>a]:btn-xs [&>a]:btn [&>a]:gap-1 [&>a]:normal-case">
+              <ul className="mt-2 flex flex-wrap gap-2 [&>a]:btn-xs [&>a]:btn [&>a]:gap-1 [&>a]:normal-case">
                 <a>
                   <SiReact /> React
                 </a>
@@ -56,11 +56,11 @@ const About = () => {
                 <a>
                   <SiPython /> Python
                 </a>
-              </div>
+              </ul>
             </div>
           </div>
 
-          <div className="about__main__divider hidden w-0.5 bg-gradient-to-b from-primary to-secondary md:block" />
+          <div className="about__main__divider hidden w-0.5 bg-gradient-to-b from-primary to-secondary sm:block" />
 
           <div className="about__main__qual flex-1 space-y-4 pt-8">
             <p className="amq__heading text-xl font-semibold">Qualifications</p>

@@ -8,13 +8,14 @@ import { HiExternalLink } from 'react-icons/hi';
 
 const Experience = () => {
   return (
-    <section id="experience" className="my-8 flex min-h-screen px-8 py-16">
+    <section id="experience" className="flex px-8 py-16">
       <div className="experience__wrapper m-auto flex flex-col">
         <div className="experience__heading text-center">
           <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
             <p>Experience</p>
             <div className="h-0.5 bg-gradient-to-r from-primary to-secondary" />
           </div>
+
           <div className="experience__main pt-8">
             <div className="experience__main__caeepr space-y-8 text-left">
               <div className="emc__header flex gap-4">
@@ -81,7 +82,7 @@ const Experience = () => {
                 </li>
               </ul>
 
-              <div className="card bg-base-100 shadow-2xl sm:card-side">
+              <div className="card static bg-base-100 shadow-2xl sm:card-side">
                 <figure>
                   <a
                     target="_blank"
