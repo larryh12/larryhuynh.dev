@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <section id="about" className="flex min-h-screen p-8">
+    <section id="about" className="flex min-h-screen px-8 py-16">
       <div className="about__wrapper m-auto flex flex-col">
         <div className="about__heading text-center">
           <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
@@ -22,12 +22,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about__main flex flex-col lg:flex-row lg:gap-8">
+        <div className="about__main flex flex-col md:flex-row md:gap-8">
           <div className="about__main__quotes flex-1 space-y-4">
             <ImQuotesLeft className="text-xl" />
             <p>👋 Hi there, I&apos;m Larry.</p>
             <p>
-              🇦🇺 I&apos;m a graduate software developer based in Queensland,
+              🦘 I&apos;m a graduate software developer based in Queensland,
               Australia.
             </p>
             <p>
@@ -60,7 +60,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about__main__divider hidden w-0.5 bg-gradient-to-b from-primary to-secondary lg:block" />
+          <div className="about__main__divider hidden w-0.5 bg-gradient-to-b from-primary to-secondary md:block" />
 
           <div className="about__main__qual flex-1 space-y-4 pt-8">
             <p className="amq__heading text-xl font-semibold">Qualifications</p>
@@ -71,7 +71,7 @@ const About = () => {
                   <a
                     href="https://cricos.education.gov.au/Institution/InstitutionDetails.aspx?ProviderCode=00233E"
                     target="_blank"
-                    className="flex items-center gap-0.5 text-xs font-extralight underline"
+                    className="prose flex items-center gap-0.5 text-xs font-light underline"
                   >
                     CRICOS: 00233E <HiExternalLink />
                   </a>
