@@ -31,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar fixed top-0 max-w-screen-lg bg-base-100">
+    <div className="navbar fixed top-0 z-50 max-w-screen-lg bg-base-100">
       <div className="flex-1">
         <a href="/" className="btn-ghost btn">
           <svg
