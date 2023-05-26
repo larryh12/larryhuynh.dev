@@ -44,7 +44,7 @@ const Projects = () => {
                     <li className="badge badge-info">HTML</li>
                     <li className="badge badge-success">CSS</li>
                     <li className="badge badge-warning">JavaScript</li>
-                    <li className="badge badge-error">API</li>
+                    <li className="badge badge-error">REST API</li>
                   </ul>
                   <p>
                     Interactive web app for trending Movie, TV Show, and Anime
@@ -52,6 +52,7 @@ const Projects = () => {
                   </p>
                   <div className="card-actions mt-2 justify-end">
                     <a
+                      aria-label="https://github.com/larryh12/flixx-app"
                       target="_blank"
                       href="https://github.com/larryh12/flixx-app"
                       className="btn-outline btn gap-2"
@@ -95,6 +96,7 @@ const Projects = () => {
                   </p>
                   <div className="card-actions mt-2 justify-end">
                     <a
+                      aria-label="https://github.com/larryh12/metaversus-site"
                       target="_blank"
                       href="https://github.com/larryh12/metaversus-site"
                       className="btn-outline btn gap-2"
@@ -131,6 +133,7 @@ const Projects = () => {
                   </p>
                   <div className="card-actions mt-2 justify-end">
                     <a
+                      aria-label="https://github.com/larryh12/hoobank-site"
                       target="_blank"
                       href="https://github.com/larryh12/hoobank-site"
                       className="btn-outline btn gap-2"
@@ -167,6 +170,7 @@ const Projects = () => {
                   </p>
                   <div className="card-actions mt-2 justify-end">
                     <a
+                      aria-label="https://github.com/larryh12/gpt-site"
                       target="_blank"
                       href="https://github.com/larryh12/gpt-site"
                       className="btn-outline btn gap-2"

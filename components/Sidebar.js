@@ -23,7 +23,7 @@ const Sidebar = () => {
     <div className="w-screen max-w-screen-sm bg-base-100 lg:hidden">
       <div className="navbar">
         <div className="flex-1">
-          <a href="/" className="btn-ghost btn sm:hidden">
+          <a aria-label="logo" href="/" className="btn-ghost btn">
             <svg
               className="fill-current"
               xmlns="http://www.w3.org/2000/svg"

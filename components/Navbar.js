@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className="navbar fixed top-0 z-50 max-w-screen-lg bg-base-100">
       <div className="flex-1">
-        <a href="/" className="btn-ghost btn">
+        <a aria-label="logo" href="/" className="btn-ghost btn">
           <svg
             className="fill-current"
             xmlns="http://www.w3.org/2000/svg"

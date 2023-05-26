@@ -37,25 +37,25 @@ const About = () => {
             </p>
             <div className="about__main__quotes__skills">
               <p>💻 I&apos;m currently learning:</p>
-              <ul className="mt-2 flex flex-wrap gap-2 [&>a]:btn-xs [&>a]:btn [&>a]:gap-1 [&>a]:normal-case">
-                <a>
+              <ul className="mt-2 flex flex-wrap gap-2 [&>li]:btn-xs [&>li]:btn [&>li]:gap-1 [&>li]:normal-case">
+                <li>
                   <SiReact /> React
-                </a>
-                <a>
+                </li>
+                <li>
                   <SiNextdotjs /> Next.js
-                </a>
-                <a>
+                </li>
+                <li>
                   <SiTailwindcss /> Tailwind CSS
-                </a>
-                <a>
+                </li>
+                <li>
                   <SiJavascript /> JavaScript
-                </a>
-                <a>
+                </li>
+                <li>
                   <SiTypescript /> TypeScript
-                </a>
-                <a>
+                </li>
+                <li>
                   <SiPython /> Python
-                </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -111,10 +111,10 @@ const About = () => {
               </p>
               <ul className="amq__cert__content font-medium [&>li]:flex [&>li]:justify-between [&>a]:[&>li]:text-accent">
                 <li>
-                  <p>• PTE Academic</p> <a>Score: 90 - 03/2023</a>
+                  <p>• PTE Academic</p> <p>Score: 90 - 03/2023</p>
                 </li>
                 <li>
-                  <p>• IELTS Academic</p> <a>Score: 8.0 - 06/2017</a>
+                  <p>• IELTS Academic</p> <p>Score: 8.0 - 06/2017</p>
                 </li>
               </ul>
             </div>

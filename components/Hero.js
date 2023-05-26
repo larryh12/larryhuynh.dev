@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             <p className="prose font-light">I am a</p>
             <p className="text-lg font-semibold">Graduate Software Developer</p>
-            <ul className="mt-4 flex justify-between [&>a]:btn-sm [&>a]:btn [&>a]:gap-1">
+            <div className="mt-4 flex justify-between [&>a]:btn-sm [&>a]:btn [&>a]:gap-1">
               <a href="#about">
                 <HiChevronDoubleDown />
                 About me
@@ -32,7 +32,7 @@ const Hero = () => {
                 <HiDownload />
                 Résumé / CV
               </a>
-            </ul>
+            </div>
           </div>
         </div>
         <div className="home__avatar flex flex-1">

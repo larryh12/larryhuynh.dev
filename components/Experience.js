@@ -91,7 +91,7 @@ const Experience = () => {
                     <Image
                       src={aemotool}
                       alt="aemotool"
-                      className="transition hover:scale-105"
+                      className="h-full object-cover transition hover:scale-105"
                     />
                   </a>
                 </figure>
