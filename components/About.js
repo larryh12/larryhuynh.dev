@@ -46,7 +46,7 @@ const About = () => {
             </p>
             <div className="about__main__quotes__skills">
               <p>💻 I&apos;m currently learning:</p>
-              <ul className="mt-2 flex flex-wrap gap-2 [&>li]:btn-xs [&>li]:btn [&>li]:gap-1 [&>li]:normal-case">
+              <ul className="mt-3 flex flex-wrap gap-3 [&>li]:btn-xs [&>li]:btn [&>li]:gap-1 [&>li]:normal-case">
                 <li>
                   <SiReact /> React
                 </li>
@@ -118,7 +118,7 @@ const About = () => {
               <p className="amq__cert__title text-lg font-medium">
                 Certifications
               </p>
-              <ul className="amq__cert__content space-y-1 font-medium [&>li]:flex [&>li]:justify-between [&>a]:[&>li]:text-accent">
+              <ul className="amq__cert__content space-y-2 font-medium [&>li]:flex [&>li]:justify-between [&>a]:[&>li]:text-accent">
                 <li>
                   <p>• PTE Academic</p> <a href="#">Score: 90 - 03/2023</a>
                 </li>

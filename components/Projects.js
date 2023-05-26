@@ -19,8 +19,8 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="project__main space-y-8 pt-8">
-          <div className="project__main__apps space-y-4">
+        <div className="project__main space-y-16 pt-8">
+          <div className="project__main__apps space-y-8">
             <p className="pma__head text-center text-xl font-semibold">
               Web Apps
             </p>
@@ -66,7 +66,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="project__main__uiux space-y-4">
+          <div className="project__main__uiux space-y-8">
             <p className="pmu__head text-center text-xl font-semibold">UI/UX</p>
             <div className="pmu__body grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div className="card-normal card static bg-neutral shadow-2xl">

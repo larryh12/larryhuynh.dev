@@ -100,14 +100,14 @@ const Experience = () => {
                   <p>
                     Australian Energy Market Operator Data Tool - Interactive
                     GUI application that provides data processing and data
-                    extraction functionality from AEMO raw data source.
+                    extraction features for AEMO raw data source.
                   </p>
                   <ul className="card-actions mt-2">
+                    <li className="badge badge-outline">Python</li>
                     <li className="badge badge-outline">pandas</li>
                     <li className="badge badge-outline">NumPy</li>
                     <li className="badge badge-outline">openpyxl</li>
                     <li className="badge badge-outline">PySimpleGUI</li>
-                    <li className="badge badge-outline">PyInstaller</li>
                   </ul>
                 </div>
               </div>
