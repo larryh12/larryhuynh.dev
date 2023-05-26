@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import griffith from '@/public/exp/griffith.png';
-import aemotool from '@/public/proj/aemotool.png';
+import aemo from '@/public/proj/aemo.png';
 
 import { HiExternalLink } from 'react-icons/hi';
 
@@ -89,8 +89,8 @@ const Experience = () => {
                     href="https://github.com/larryh12/aemo-tool"
                   >
                     <Image
-                      src={aemotool}
-                      alt="aemotool"
+                      src={aemo}
+                      alt="aemo"
                       className="h-full object-cover transition hover:scale-105"
                     />
                   </a>

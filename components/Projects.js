@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Image from 'next/image';
-import flixxapp from '@/public/proj/flixxapp.png';
-import metaversussite from '@/public/proj/metaversussite.png';
-import hoobanksite from '@/public/proj/hoobanksite.png';
-import gptsite from '@/public/proj/gptsite.png';
+import flixx from '@/public/proj/flixx.png';
+import metaversus from '@/public/proj/metaversus.png';
+import hoobank from '@/public/proj/hoobank.png';
+import gpt3 from '@/public/proj/gpt3.png';
 
 import { SiGithub } from 'react-icons/si';
 
@@ -27,13 +27,10 @@ const Projects = () => {
             <div className="pma__body grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div className="card-normal card static bg-neutral shadow-2xl">
                 <figure>
-                  <a
-                    target="_blank"
-                    href="https://flixx-app-larryh12.vercel.app/"
-                  >
+                  <a target="_blank" href="https://flixx-larryh12.vercel.app/">
                     <Image
-                      src={flixxapp}
-                      alt="flixxapp"
+                      src={flixx}
+                      alt="flixx"
                       className="transition hover:scale-105"
                     />
                   </a>
@@ -73,11 +70,11 @@ const Projects = () => {
                 <figure>
                   <a
                     target="_blank"
-                    href="https://metaversus-site-larryh12.vercel.app/"
+                    href="https://metaversus-larryh12.vercel.app/"
                   >
                     <Image
-                      src={metaversussite}
-                      alt="metaversussite"
+                      src={metaversus}
+                      alt="metaversus"
                       className="transition hover:scale-105"
                     />
                   </a>
@@ -91,14 +88,14 @@ const Projects = () => {
                     <li className="badge badge-error">Framer Motion</li>
                   </ul>
                   <p>
-                    Re-creation of a modern front-end UI/UX web design with the
-                    theme of the Metaverse.
+                    Re-creation of a modern front-end web design with the theme
+                    of the Metaverse.
                   </p>
                   <div className="card-actions mt-2 justify-end">
                     <a
-                      aria-label="https://github.com/larryh12/metaversus-site"
+                      aria-label="https://github.com/larryh12/metaversus-ui"
                       target="_blank"
-                      href="https://github.com/larryh12/metaversus-site"
+                      href="https://github.com/larryh12/metaversus-ui"
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
@@ -111,11 +108,11 @@ const Projects = () => {
                 <figure>
                   <a
                     target="_blank"
-                    href="https://hoobank-site-larryh12.vercel.app/"
+                    href="https://hoobank-larryh12.vercel.app/"
                   >
                     <Image
-                      src={hoobanksite}
-                      alt="hoobanksite"
+                      src={hoobank}
+                      alt="hoobank"
                       className="transition hover:scale-105"
                     />
                   </a>
@@ -128,14 +125,14 @@ const Projects = () => {
                     <li className="badge badge-warning">Tailwind CSS</li>
                   </ul>
                   <p>
-                    Re-creation of a modern front-end UI/UX web design with the
-                    theme of a digital payment service.
+                    Re-creation of a modern front-end web design for a digital
+                    payment service website.
                   </p>
                   <div className="card-actions mt-2 justify-end">
                     <a
-                      aria-label="https://github.com/larryh12/hoobank-site"
+                      aria-label="https://github.com/larryh12/hoobank-ui"
                       target="_blank"
-                      href="https://github.com/larryh12/hoobank-site"
+                      href="https://github.com/larryh12/hoobank-ui"
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
@@ -146,33 +143,30 @@ const Projects = () => {
               </div>
               <div className="card-normal card static bg-neutral shadow-2xl">
                 <figure>
-                  <a
-                    target="_blank"
-                    href="https://gpt-site-larryh12.vercel.app/"
-                  >
+                  <a target="_blank" href="https://gpt3-larryh12.vercel.app/">
                     <Image
-                      src={gptsite}
-                      alt="gptsite"
+                      src={gpt3}
+                      alt="gpt3"
                       className="transition hover:scale-105"
                     />
                   </a>
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">GPT-3 Website</h2>
+                  <h2 className="card-title">GPT-3</h2>
                   <ul className="flex flex-wrap gap-2">
                     <li className="badge badge-info">Next.js</li>
                     <li className="badge badge-success">React</li>
                     <li className="badge badge-warning">Tailwind CSS</li>
                   </ul>
                   <p>
-                    Re-creation of a modern front-end UI/UX web design with the
-                    theme of OpenAI&apos;s GPT model.
+                    Re-creation of a modern front-end web design with the
+                    concept of OpenAI&apos;s GPT-3.
                   </p>
                   <div className="card-actions mt-2 justify-end">
                     <a
-                      aria-label="https://github.com/larryh12/gpt-site"
+                      aria-label="https://github.com/larryh12/gpt3-ui"
                       target="_blank"
-                      href="https://github.com/larryh12/gpt-site"
+                      href="https://github.com/larryh12/gpt3-ui"
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />

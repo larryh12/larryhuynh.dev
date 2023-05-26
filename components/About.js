@@ -48,10 +48,10 @@ const About = () => {
               <p>💻 I&apos;m currently learning:</p>
               <ul className="mt-3 flex flex-wrap gap-3 [&>li]:btn-xs [&>li]:btn [&>li]:gap-1 [&>li]:normal-case">
                 <li>
-                  <SiReact /> React
+                  <SiNextdotjs /> Next.js
                 </li>
                 <li>
-                  <SiNextdotjs /> Next.js
+                  <SiReact /> React
                 </li>
                 <li>
                   <SiTailwindcss /> Tailwind CSS
