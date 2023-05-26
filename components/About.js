@@ -27,13 +27,22 @@ const About = () => {
             <ImQuotesLeft className="text-xl" />
             <p>👋 Hi there, I&apos;m Larry.</p>
             <p>
-              🦘 I&apos;m a graduate software developer based in Queensland,
+              🐨 I&apos;m a graduate software developer based in Queensland,
               Australia.
             </p>
             <p>
-              🔥 I enjoy learning about technology and science. I&apos;m also an
-              avid problem solver, aspired to develop highly performant
-              solutions that focus on scalability and availability.
+              🔥 I&apos;m an ambitious engineer with hands-on experience in
+              full-stack web development and data science.
+            </p>
+            <p>
+              📈 I&apos;m passionate about creating innovative web applications
+              and data-driven solutions that enhance user experience and
+              business value.
+            </p>
+            <p>
+              🛠️ I&apos;m also an avid problem solver, aspiring to deliver
+              highly performant solutions that focus on scalability and
+              availability.
             </p>
             <div className="about__main__quotes__skills">
               <p>💻 I&apos;m currently learning:</p>
@@ -64,7 +73,7 @@ const About = () => {
 
           <div className="about__main__qual flex-1 space-y-4 pt-8">
             <p className="amq__heading text-xl font-semibold">Qualifications</p>
-            <div className="amq__gu space-y-2">
+            <div className="amq__gu space-y-4">
               <div className="amq__gu__title flex items-center justify-between text-lg font-medium">
                 <div className="amq__gu__title__name">
                   <p>Griffith University</p>
@@ -78,7 +87,7 @@ const About = () => {
                 </div>
                 <p className="amq__gu__title__year text-accent">2019 - 2022</p>
               </div>
-              <ul className="amq__gu__content">
+              <ul className="amq__gu__content space-y-1">
                 <li>• Bachelor of Information Technology</li>
                 <li>• Awarded with Distinction GPA: 6.83 / 7</li>
                 <li className="[&>a]:ml-1.5 [&>a]:inline-flex [&>a]:items-center [&>a]:gap-0.5 [&>a]:underline">
@@ -105,16 +114,16 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="amq__cert space-y-2">
+            <div className="amq__cert space-y-4">
               <p className="amq__cert__title text-lg font-medium">
                 Certifications
               </p>
-              <ul className="amq__cert__content font-medium [&>li]:flex [&>li]:justify-between [&>a]:[&>li]:text-accent">
+              <ul className="amq__cert__content space-y-1 font-medium [&>li]:flex [&>li]:justify-between [&>a]:[&>li]:text-accent">
                 <li>
-                  <p>• PTE Academic</p> <p>Score: 90 - 03/2023</p>
+                  <p>• PTE Academic</p> <a href="#">Score: 90 - 03/2023</a>
                 </li>
                 <li>
-                  <p>• IELTS Academic</p> <p>Score: 8.0 - 06/2017</p>
+                  <p>• IELTS Academic</p> <a href="#">Score: 8.0 - 06/2017</a>
                 </li>
               </ul>
             </div>

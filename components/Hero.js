@@ -37,7 +37,13 @@ const Hero = () => {
         </div>
         <div className="home__avatar flex flex-1">
           <div className="home__avatar__wrapper blob m-auto overflow-hidden bg-gradient-to-r from-primary to-secondary">
-            <Image src={avatar} width={256} height={256} alt="avatar" />
+            <Image
+              src={avatar}
+              width={256}
+              height={256}
+              priority={true}
+              alt="avatar"
+            />
           </div>
         </div>
       </div>
