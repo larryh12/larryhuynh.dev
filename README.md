@@ -67,5 +67,5 @@
 ## :writing_hand: Quote of the Day
 
 <!--QOTD_STARTS_HERE-->
-<blockquote>&ldquo;Today I failed, but tomorrow I will try again. Failure is not the end of the road, but a chance to learn and grow.&rdquo; &mdash; <footer>Saturday, May 27, 2023</footer></blockquote>
+<blockquote>&ldquo;Thinking will not overcome fear but action will. &rdquo; &mdash; <footer>W. Clement Stone</footer></blockquote>
 <!--QOTD_ENDS_HERE-->
