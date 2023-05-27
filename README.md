@@ -60,6 +60,12 @@
   <img src="https://streak-stats.demolab.com?user=larryh12&card_width=640" />
 </p>
 
-<!-- <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=larryh12&layout=compact" />
-</p> -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=larryh12&layout=compact&hide=other&custom_title=Dev+Time" />
+</p>
+
+## :writing_hand: Quote of the Day
+
+<!--QOTD_STARTS_HERE-->
+<blockquote>&ldquo;Today I failed, but tomorrow I will try again. Failure is not the end of the road, but a chance to learn and grow.&rdquo; &mdash; <footer>Saturday, May 27, 2023</footer></blockquote>
+<!--QOTD_ENDS_HERE-->
