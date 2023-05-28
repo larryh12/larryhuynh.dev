@@ -67,5 +67,5 @@
 ## :bulb: Quote of the Day
 
 <!--QOTD_STARTS_HERE-->
-<blockquote>&ldquo;Thinking will not overcome fear but action will. &rdquo; &mdash; <footer>W. Clement Stone</footer></blockquote>
+<blockquote>&ldquo;To some degree, you control your life by controlling your time.&rdquo; &mdash; <footer>Conrad Hilton</footer></blockquote>
 <!--QOTD_ENDS_HERE-->
