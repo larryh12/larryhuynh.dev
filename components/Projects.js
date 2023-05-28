@@ -2,6 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import flixx from '@/public/proj/flixx.png';
+import qotd from '@/public/proj/qotd.png';
 import metaversus from '@/public/proj/metaversus.png';
 import hoobank from '@/public/proj/hoobank.png';
 import gpt3 from '@/public/proj/gpt3.png';
@@ -52,6 +53,44 @@ const Projects = () => {
                       aria-label="https://github.com/larryh12/flixx-app"
                       target="_blank"
                       href="https://github.com/larryh12/flixx-app"
+                      className="btn-outline btn gap-2"
+                    >
+                      <SiGithub />
+                      See More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="card-normal card static bg-neutral shadow-2xl">
+                <figure>
+                  <a
+                    target="_blank"
+                    href="https://github.com/marketplace/actions/github-readme-qotd"
+                  >
+                    <Image
+                      src={qotd}
+                      alt="qotd"
+                      className="transition hover:scale-105"
+                    />
+                  </a>
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">GitHub Readme QotD</h2>
+                  <ul className="flex flex-wrap gap-2">
+                    <li className="badge badge-info">GitHub Actions</li>
+                    <li className="badge badge-success">Python</li>
+                    <li className="badge badge-warning">Docker</li>
+                    <li className="badge badge-error">CI/CD</li>
+                  </ul>
+                  <p>
+                    GitHub Actions workflow to automate your repo Readme update
+                    with a dynamic Quote of the Day section.
+                  </p>
+                  <div className="card-actions mt-2 justify-end">
+                    <a
+                      aria-label="https://github.com/larryh12/github-readme-qotd"
+                      target="_blank"
+                      href="https://github.com/larryh12/github-readme-qotd"
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
