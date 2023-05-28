@@ -12,7 +12,7 @@ import {
   HiX,
 } from 'react-icons/hi';
 
-import { AiFillMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const closeSidebar = () => {
   document.getElementById('my-drawer').checked = false;
@@ -77,32 +77,38 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
-        <div className="m-auto flex w-fit gap-2 [&>a]:btn-sm [&>a]:btn [&>a]:text-2xl">
+        <div className="m-auto flex w-fit [&>a]:btn-ghost [&>a]:btn [&>a]:text-2xl">
           <a aria-label="email" href="mailto:larry.huynh.dev@outlook.com">
-            <AiFillMail />
+            <FaEnvelope />
           </a>
           <a
             aria-label="linkedin"
             href="https://www.linkedin.com/in/larry-huynh-dev"
             target="_blank"
           >
-            <AiFillLinkedin />
+            <FaLinkedin />
           </a>
           <a
             aria-label="github"
             href="https://github.com/larryh12"
             target="_blank"
           >
-            <AiFillGithub />
+            <FaGithub />
           </a>
         </div>
         <div className="m-auto w-fit">
           <a
-            className="btn gap-2"
+            className="btn-outline btn-active btn gap-2 normal-case"
             href="https://www.linkedin.com/in/larry-huynh-dev/"
             target="_blank"
           >
-            <HiDownload className="text-xl" /> Résumé / CV
+            <HiDownload className="text-xl" />
+            Résumé | CV
+          </a>
+        </div>
+        <div className="m-auto w-fit">
+          <a onClick={closeSidebar} href="#home" className="link">
+            Back to top
           </a>
         </div>
       </div>
