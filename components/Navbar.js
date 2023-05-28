@@ -46,43 +46,38 @@ const Navbar = () => {
       </div>
 
       <div className="flex-none">
-        <ul className="hidden lg:menu lg:menu-horizontal [&>a]:[&>li]:btn-ghost [&>a]:[&>li]:btn">
+        <ul className="hidden lg:menu lg:menu-horizontal [&>a]:[&>li]:btn-ghost [&>a]:[&>li]:btn [&>a]:[&>li]:gap-2">
           <li>
             <a href="#home">
-              <HiOutlineHome />
-              Home
+              <HiOutlineHome className="text-xl" /> Home
             </a>
           </li>
           <li>
             <a href="#about">
-              <HiOutlineUserCircle />
-              About
+              <HiOutlineUserCircle className="text-xl" /> About
             </a>
           </li>
           <li>
             <a href="#experience">
-              <HiOutlineCode />
-              Experience
+              <HiOutlineCode className="text-xl" /> Experience
             </a>
           </li>
           <li>
             <a href="#projects">
-              <HiOutlineDesktopComputer />
-              Projects
+              <HiOutlineDesktopComputer className="text-xl" /> Projects
             </a>
           </li>
           <li>
             <a href="#contacts">
-              <HiOutlineChat />
-              Contacts
+              <HiOutlineChat className="text-xl" /> Contacts
             </a>
           </li>
         </ul>
 
         <div className="dropdown-end dropdown">
-          <label tabIndex={0} className="btn-ghost rounded-btn btn gap-3">
-            <HiOutlineColorSwatch className="text-3xl lg:text-sm" />
-            <span className="hidden gap-3 sm:inline-flex">
+          <label tabIndex={0} className="btn-ghost btn gap-2">
+            <HiOutlineColorSwatch className="text-3xl lg:text-xl" />
+            <span className="hidden gap-2 sm:inline-flex">
               Themes
               <HiChevronDown />
             </span>
