@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import avatar from '@/public/avatar.png';
 
-import { HiChevronDoubleDown, HiDownload } from 'react-icons/hi';
+import { HiDownload } from 'react-icons/hi';
 
 const Hero = () => {
   return (
@@ -20,17 +20,15 @@ const Hero = () => {
             </p>
             <p className="prose font-light">I am a</p>
             <p className="text-lg font-semibold">Graduate Software Developer</p>
-            <div className="mt-4 flex justify-between [&>a]:btn-sm [&>a]:btn [&>a]:gap-1">
-              <a href="#about">
-                <HiChevronDoubleDown />
-                About me
-              </a>
+            <div className="mt-6 flex flex-col gap-4 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
+              <a href="#about">About me</a>
               <a
                 href="https://www.linkedin.com/in/larry-huynh-dev/"
                 target="_blank"
+                className="btn-active gap-1"
               >
-                <HiDownload />
-                Résumé / CV
+                <HiDownload className="text-lg" />
+                Résumé | CV
               </a>
             </div>
           </div>
