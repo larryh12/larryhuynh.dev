@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 export const metadata = {
