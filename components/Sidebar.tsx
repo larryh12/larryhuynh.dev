@@ -15,7 +15,8 @@ import {
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const closeSidebar = () => {
-  document.getElementById('my-drawer').checked = false;
+  const myDrawer = document.getElementById('my-drawer') as HTMLInputElement;
+  myDrawer.checked = false;
 };
 
 const Sidebar = () => {

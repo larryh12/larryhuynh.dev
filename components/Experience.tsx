@@ -82,7 +82,7 @@ const Experience = () => {
                 </li>
               </ul>
 
-              <div className="card-normal card static bg-neutral shadow-2xl sm:card-side">
+              <div className="card card-normal static bg-neutral shadow-2xl sm:card-side">
                 <figure>
                   <a
                     target="_blank"
@@ -103,11 +103,11 @@ const Experience = () => {
                     extraction features for AEMO raw data source.
                   </p>
                   <ul className="card-actions mt-2">
-                    <li className="badge badge-outline">Python</li>
-                    <li className="badge badge-outline">pandas</li>
-                    <li className="badge badge-outline">NumPy</li>
-                    <li className="badge badge-outline">openpyxl</li>
-                    <li className="badge badge-outline">PySimpleGUI</li>
+                    <li className="badge-outline badge">Python</li>
+                    <li className="badge-outline badge">pandas</li>
+                    <li className="badge-outline badge">NumPy</li>
+                    <li className="badge-outline badge">openpyxl</li>
+                    <li className="badge-outline badge">PySimpleGUI</li>
                   </ul>
                 </div>
               </div>

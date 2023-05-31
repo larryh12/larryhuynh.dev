@@ -5,7 +5,11 @@ export const metadata = {
   description: "Larry Huynh's Personal Website",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="m-auto max-w-screen-lg">{children}</body>

@@ -84,7 +84,7 @@ const Navbar = () => {
           </label>
 
           <div className="dropdown-content h-80 max-h-[50vh] overflow-y-auto rounded-xl bg-base-200">
-            <div className="flex flex-col gap-3 p-3" tabindex="0">
+            <div className="flex flex-col gap-3 p-3" tabIndex={0}>
               {themes.map((theme, index) => (
                 <button
                   key={index}
