@@ -56,7 +56,7 @@ const Projects = () => {
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
-                      See More
+                      Se&#8203;e More
                     </a>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ const Projects = () => {
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
-                      See More
+                      Se&#8203;e More
                     </a>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const Projects = () => {
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
-                      See More
+                      Se&#8203;e More
                     </a>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ const Projects = () => {
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
-                      See More
+                      Se&#8203;e More
                     </a>
                   </div>
                 </div>
@@ -209,7 +209,7 @@ const Projects = () => {
                       className="btn-outline btn gap-2"
                     >
                       <SiGithub />
-                      See More
+                      Se&#8203;e More
                     </a>
                   </div>
                 </div>
