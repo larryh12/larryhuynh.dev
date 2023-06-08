@@ -6,8 +6,8 @@ import NavItems from './NavItems';
 
 const Sidebar = () => {
   return (
-    <div className="h-screen w-screen overflow-y-auto pt-16">
-      <ul className="menu mx-auto w-fit gap-1 font-medium uppercase [&>*]:[&>a]:[&>li]:text-2xl">
+    <div className="h-screen w-screen overflow-y-auto bg-base-100 pt-20">
+      <ul className="menu mx-auto w-fit gap-2 font-medium uppercase [&>*]:[&>a]:[&>li]:text-2xl">
         <NavItems />
       </ul>
       <ul className="menu menu-horizontal w-full justify-center text-xl">
