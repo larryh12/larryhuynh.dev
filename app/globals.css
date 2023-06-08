@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.drawer-content::-webkit-scrollbar,
+/* .drawer-content::-webkit-scrollbar,
 .dropdown-content::-webkit-scrollbar {
   display: none;
 }
@@ -11,7 +11,7 @@
 .dropdown-content {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+} */
 
 .blob {
   animation: blob__transform 30s ease-in-out infinite both alternate;
