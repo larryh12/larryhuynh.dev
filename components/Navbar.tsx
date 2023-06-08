@@ -1,18 +1,12 @@
 import React from 'react';
 
-import {
-  HiMenuAlt3,
-  HiOutlineHome,
-  HiOutlineDesktopComputer,
-  HiOutlineCode,
-  HiOutlineUserCircle,
-  HiOutlineChat,
-} from 'react-icons/hi';
+import { HiMenuAlt3 } from 'react-icons/hi';
+import NavItems from './NavItems';
 import ThemeBtn from './ThemeBtn';
 
 const Navbar = () => {
   return (
-    <div className="navbar fixed top-0 z-10 max-w-screen-lg bg-base-100 pr-0">
+    <div className="navbar fixed top-0 z-10 max-w-screen-lg pr-0">
       <div className="flex-1">
         <a aria-label="logo" href="/" className="btn-ghost btn">
           <svg
@@ -28,31 +22,7 @@ const Navbar = () => {
 
       <div className="flex-none">
         <ul className="menu menu-horizontal hidden font-medium uppercase lg:flex [&>*]:[&>a]:[&>li]:text-2xl">
-          <li>
-            <a href="#home">
-              <HiOutlineHome /> Home
-            </a>
-          </li>
-          <li>
-            <a href="#about">
-              <HiOutlineUserCircle /> About
-            </a>
-          </li>
-          <li>
-            <a href="#experience">
-              <HiOutlineCode /> Experience
-            </a>
-          </li>
-          <li>
-            <a href="#projects">
-              <HiOutlineDesktopComputer /> Projects
-            </a>
-          </li>
-          <li>
-            <a href="#contacts">
-              <HiOutlineChat /> Contacts
-            </a>
-          </li>
+          <NavItems />
           <li>
             <ThemeBtn />
           </li>

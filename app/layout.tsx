@@ -14,7 +14,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <body className="m-auto max-w-screen-lg">{children}</body> */}
       <body className="m-auto max-w-screen-lg">
         <div className="drawer drawer-end">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -22,8 +21,7 @@ export default function RootLayout({
             <Navbar />
             {children}
           </div>
-          <div className="drawer-side">
-            <label htmlFor="my-drawer" className="drawer-overlay"></label>
+          <div className="drawer-side lg:hidden">
             <Sidebar />
           </div>
         </div>

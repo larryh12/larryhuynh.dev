@@ -16,6 +16,9 @@ module.exports = {
       height: {
         screen: '100svh',
       },
+      width: {
+        screen: '100svw',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
