@@ -1,11 +1,10 @@
 import React from 'react';
 
 import Image from 'next/image';
-import avatar from '@/public/avatar.png';
-
 import { HiDownload } from 'react-icons/hi';
 
-const Hero = () => {
+const Hero = (props: any) => {
+  const meta = props.meta;
   return (
     <section
       id="home"
@@ -15,14 +14,14 @@ const Hero = () => {
         <div className="flex flex-1 justify-center">
           <div className="flex w-fit flex-col">
             <p className="prose font-light">Hi, my name is</p>
-            <p className="inline-block bg-gradient-to-r from-primary-focus to-primary bg-clip-text text-7xl font-black text-transparent">
-              LARRY
+            <p className="inline-block bg-gradient-to-r from-primary-focus to-primary bg-clip-text text-7xl font-black uppercase text-transparent">
+              {meta.first}
             </p>
-            <p className="inline-block bg-gradient-to-r from-secondary-focus to-secondary bg-clip-text text-7xl font-black text-transparent">
-              HUYNH
+            <p className="inline-block bg-gradient-to-r from-secondary-focus to-secondary bg-clip-text text-7xl font-black uppercase text-transparent">
+              {meta.last}
             </p>
             <p className="prose font-light">I am a</p>
-            <p className="text-lg font-semibold">Graduate Software Developer</p>
+            <p className="text-lg font-semibold">{meta.title}</p>
             <div className="mt-6 flex flex-col gap-4 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
               <a href="#about"> About me </a>
               <a
@@ -38,7 +37,7 @@ const Hero = () => {
         <div className="flex flex-1 items-center justify-center">
           <div className="blob w-fit overflow-hidden bg-gradient-to-r from-primary to-secondary">
             <Image
-              src={avatar}
+              src={meta.avatar}
               width={256}
               height={256}
               priority={true}

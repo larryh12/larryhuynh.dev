@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 import NavItems from './NavItems';

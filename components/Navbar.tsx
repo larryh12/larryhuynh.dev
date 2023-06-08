@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { HiMenuAlt3 } from 'react-icons/hi';
 import NavItems from './NavItems';
 import ThemeBtn from './ThemeBtn';
