@@ -1,6 +1,12 @@
+import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'larryhuynh.dev',
@@ -13,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body className="m-auto max-w-screen-lg">
         <div className="drawer drawer-end">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />

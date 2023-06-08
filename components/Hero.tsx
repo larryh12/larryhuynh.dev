@@ -15,15 +15,15 @@ const Hero = () => {
         <div className="flex flex-1 justify-center">
           <div className="flex w-fit flex-col">
             <p className="prose font-light">Hi, my name is</p>
-            <p className="inline-block bg-gradient-to-r from-primary-focus to-primary bg-clip-text text-7xl font-extrabold text-transparent">
+            <p className="inline-block bg-gradient-to-r from-primary-focus to-primary bg-clip-text text-7xl font-black text-transparent">
               LARRY
             </p>
-            <p className="inline-block bg-gradient-to-r from-secondary-focus to-secondary bg-clip-text text-7xl font-extrabold text-transparent">
+            <p className="inline-block bg-gradient-to-r from-secondary-focus to-secondary bg-clip-text text-7xl font-black text-transparent">
               HUYNH
             </p>
             <p className="prose font-light">I am a</p>
             <p className="text-lg font-semibold">Graduate Software Developer</p>
-            <div className="mt-6 flex flex-col gap-6 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
+            <div className="mt-6 flex flex-col gap-4 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
               <a href="#about"> About me </a>
               <a
                 href="https://www.linkedin.com/in/larry-huynh-dev/"
