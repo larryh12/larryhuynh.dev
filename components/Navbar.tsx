@@ -12,7 +12,7 @@ import ThemeBtn from './ThemeBtn';
 
 const Navbar = () => {
   return (
-    <div className="navbar fixed top-0 z-50 max-w-screen-lg bg-base-100">
+    <div className="navbar fixed top-0 z-10 max-w-screen-lg bg-base-100 pr-0">
       <div className="flex-1">
         <a aria-label="logo" href="/" className="btn-ghost btn">
           <svg
@@ -27,42 +27,47 @@ const Navbar = () => {
       </div>
 
       <div className="flex-none">
-        <ul className="hidden lg:menu lg:menu-horizontal [&>a]:[&>li]:btn-ghost [&>a]:[&>li]:btn [&>a]:[&>li]:gap-2">
+        <ul className="menu menu-horizontal hidden font-medium uppercase lg:flex [&>*]:[&>a]:[&>li]:text-2xl">
           <li>
             <a href="#home">
-              <HiOutlineHome className="text-xl" /> Home
+              <HiOutlineHome /> Home
             </a>
           </li>
           <li>
             <a href="#about">
-              <HiOutlineUserCircle className="text-xl" /> About
+              <HiOutlineUserCircle /> About
             </a>
           </li>
           <li>
             <a href="#experience">
-              <HiOutlineCode className="text-xl" /> Experience
+              <HiOutlineCode /> Experience
             </a>
           </li>
           <li>
             <a href="#projects">
-              <HiOutlineDesktopComputer className="text-xl" /> Projects
+              <HiOutlineDesktopComputer /> Projects
             </a>
           </li>
           <li>
             <a href="#contacts">
-              <HiOutlineChat className="text-xl" /> Contacts
+              <HiOutlineChat /> Contacts
             </a>
+          </li>
+          <li>
+            <ThemeBtn />
           </li>
         </ul>
 
-        <ThemeBtn />
-
-        <label
-          htmlFor="my-drawer"
-          className="btn-ghost btn-square btn text-3xl lg:hidden"
-        >
-          <HiMenuAlt3 />
-        </label>
+        <ul className="menu menu-horizontal font-medium uppercase lg:hidden">
+          <li>
+            <ThemeBtn />
+          </li>
+          <li>
+            <label htmlFor="my-drawer" className="text-2xl">
+              <HiMenuAlt3 />
+            </label>
+          </li>
+        </ul>
       </div>
     </div>
   );
