@@ -10,8 +10,15 @@ module.exports = {
       flex: {
         2: '2 2 0%',
       },
+      minHeight: {
+        screen: '100svh',
+      },
+      height: {
+        screen: '100svh',
+      },
     },
   },
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
     darkTheme: 'rosepine-moon',
     themes: [
@@ -108,5 +115,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
 };
