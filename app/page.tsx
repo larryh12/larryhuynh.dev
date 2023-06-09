@@ -1,3 +1,4 @@
+import About from '@/components/About';
 import Hero from '@/components/Hero';
 
 const useMeta = async () => {
@@ -21,8 +22,14 @@ export default async function Home() {
   const [meta, repo] = await Promise.all([metaData, repoData]);
 
   return (
-    <div className="w-full">
+    <div className="w-full px-4">
       <Hero name={meta.links.name} />
+      <About
+        hello={meta.hello}
+        qual={meta.qual}
+        cert={meta.cert}
+        tech={meta.tech}
+      />
     </div>
   );
 }
