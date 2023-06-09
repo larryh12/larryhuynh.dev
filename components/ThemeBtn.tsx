@@ -25,11 +25,11 @@ const ThemeBtn = () => {
         <HiOutlineColorSwatch className="text-2xl" />
         <span className="hidden sm:inline">Themes</span>
       </summary>
-      <ul className="dropdown-content menu rounded-box gap-2 p-2 drop-shadow-2xl">
+      <div className="dropdown-content rounded-box w-64 max-w-[80svw] space-y-2 bg-base-100 p-2 drop-shadow-lg">
         {themes.map((theme, index) => (
           <button
             key={index}
-            className="flex items-center rounded-lg bg-base-100 p-3 text-sm text-base-content transition hover:bg-base-200"
+            className="btn-neutral btn-block btn-sm btn h-fit bg-base-100 normal-case"
             data-theme={theme}
             data-set-theme={theme}
             data-act-class="[&_svg]:visible"
@@ -44,7 +44,7 @@ const ThemeBtn = () => {
             >
               <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
             </svg>
-            <span className="ml-2 mr-4 flex-1 text-start">{theme}</span>
+            <span className="flex-1 text-start">{theme}</span>
             <div className="flex gap-1 [&>div]:rounded-full [&>div]:px-0.5 [&>div]:py-2">
               <div className="bg-primary" />
               <div className="bg-secondary" />
@@ -53,7 +53,7 @@ const ThemeBtn = () => {
             </div>
           </button>
         ))}
-      </ul>
+      </div>
     </details>
   );
 };

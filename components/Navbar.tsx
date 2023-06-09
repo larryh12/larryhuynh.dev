@@ -5,7 +5,7 @@ import ThemeBtn from './ThemeBtn';
 
 const Navbar = () => {
   return (
-    <div className="navbar fixed top-0 z-10 max-w-screen-lg pr-0 backdrop-blur-xl">
+    <div className="navbar fixed top-0 z-10 max-w-screen-lg bg-base-100/80 pr-0 backdrop-blur-xl">
       <div className="flex-1">
         <a aria-label="logo" href="/" className="btn-ghost btn">
           <svg
