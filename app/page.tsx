@@ -22,7 +22,7 @@ export default async function Home() {
 
   return (
     <div className="w-full">
-      <Hero meta={meta.links.name} />
+      <Hero name={meta.links.name} />
     </div>
   );
 }
