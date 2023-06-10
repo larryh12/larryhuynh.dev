@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 import NavItems from './NavItems';
+import SideBtns from './SideBtns';
 
 const Sidebar = () => {
   return (
@@ -10,41 +10,15 @@ const Sidebar = () => {
         <NavItems />
       </ul>
       <ul className="menu menu-horizontal w-full justify-center text-xl">
-        <li>
-          <a
-            aria-label="email"
-            href="mailto:larry.huynh.dev@outlook.com"
-            target="_blank"
-          >
-            <FaEnvelope />
-          </a>
-        </li>
-        <li>
-          <a
-            aria-label="linkedin"
-            href="https://www.linkedin.com/in/larry-huynh-dev"
-            target="_blank"
-          >
-            <FaLinkedin />
-          </a>
-        </li>
-        <li>
-          <a
-            aria-label="github"
-            href="https://github.com/larryh12"
-            target="_blank"
-          >
-            <FaGithub />
-          </a>
-        </li>
+        <SideBtns />
       </ul>
-      <div className="mt-2 flex flex-col items-center">
+      <div className="mt-4 flex flex-col items-center">
         <a
-          className="btn-outline btn-active btn-sm btn h-fit py-2 normal-case"
-          href="https://www.linkedin.com/in/larry-huynh-dev/"
+          className="btn-outline btn-active btn-sm btn normal-case"
+          href="/cv"
           target="_blank"
         >
-          <HiDownload className="text-lg" /> Résumé | CV
+          <HiDownload className="text-lg" /> Resume / CV
         </a>
       </div>
     </div>

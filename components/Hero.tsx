@@ -22,14 +22,12 @@ const Hero = (props: any) => {
             </p>
             <p className="prose font-light">I am a</p>
             <p className="text-lg font-semibold">{name.title}</p>
-            <div className="mt-6 flex flex-col gap-4 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
-              <a href="#about"> About me </a>
-              <a
-                href="https://www.linkedin.com/in/larry-huynh-dev/"
-                target="_blank"
-                className="btn-active"
-              >
-                <HiDownload className="text-lg" /> Résumé | CV
+            <div className="flex gap-4 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
+              <a href="#about" className="btn-active">
+                About me
+              </a>
+              <a href="/cv" target="_blank">
+                My resume
               </a>
             </div>
           </div>

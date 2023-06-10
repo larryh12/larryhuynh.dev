@@ -20,30 +20,6 @@ const About = (props: any) => {
             {hello.body.map((line: string, index: number) => (
               <p key={index}>{line}</p>
             ))}
-
-            {/* <div className="about__main__quotes__skills">
-              <p>💻 I&apos;m currently learning:</p>
-              <ul className="mt-3 flex flex-wrap gap-3 [&>li]:btn-xs [&>li]:btn [&>li]:gap-1 [&>li]:normal-case">
-                <li>
-                  <SiNextdotjs /> Next.js
-                </li>
-                <li>
-                  <SiReact /> React
-                </li>
-                <li>
-                  <SiTailwindcss /> Tailwind CSS
-                </li>
-                <li>
-                  <SiJavascript /> JavaScript
-                </li>
-                <li>
-                  <SiTypescript /> TypeScript
-                </li>
-                <li>
-                  <SiPython /> Python
-                </li>
-              </ul>
-            </div> */}
           </div>
 
           <div className="prose flex-1 sm:text-right">
@@ -51,10 +27,12 @@ const About = (props: any) => {
             {qual.map((entry: any, index: number) => (
               <div key={index}>
                 <h3>{entry.head.title}</h3>
-                <h4>
-                  {entry.head.year}
-                  {' | '}
-                  <a href={entry.head.link}>{entry.head.subtitle}</a>
+                <h4 className="space-x-2">
+                  <span>{entry.head.year}</span>
+                  <span>|</span>
+                  <a className="underline-offset-2" href={entry.head.link}>
+                    {entry.head.subtitle}
+                  </a>
                 </h4>
                 <ul className="sm:list-none">
                   {entry.body.map((item: string, index: number) => (
@@ -66,8 +44,8 @@ const About = (props: any) => {
             <h2>Certifications</h2>
             {cert.map((entry: any, index: number) => (
               <h4 key={index} className="grid grid-cols-2">
-                <span>{entry.body}</span>
-                <span>{entry.head}</span>
+                <span className="sm:ml-10 sm:text-left">{entry.year}</span>
+                <span>{entry.title}</span>
               </h4>
             ))}
           </div>
