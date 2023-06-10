@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .animate-blob {
-  animation: blob__transform 30s ease-in-out infinite both alternate;
+  animation: blob__transform 60s ease-in-out infinite both alternate;
 }
 
 @keyframes blob__transform {
@@ -28,5 +28,109 @@
   }
   84% {
     border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+.animate-vercel1 {
+  animation: vercel1__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercel1__transform {
+  0%,
+  100% {
+    @apply bg-primary-focus;
+  }
+  16.67% {
+    @apply bg-primary-focus;
+  }
+  33.33% {
+    @apply bg-base-content;
+  }
+  50.00% {
+    @apply bg-base-content;
+  }
+  66.67% {
+    @apply bg-base-content;
+  }
+  83.33% {
+    @apply bg-base-content;
+  }
+}
+
+.animate-vercel2 {
+  animation: vercel2__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercel2__transform {
+  0%,
+  100% {
+    @apply bg-base-content;
+  }
+  16.67% {
+    @apply bg-base-content;
+  }
+  33.33% {
+    @apply bg-secondary-focus;
+  }
+  50.00% {
+    @apply bg-secondary-focus;
+  }
+  66.67% {
+    @apply bg-base-content;
+  }
+  83.33% {
+    @apply bg-base-content;
+  }
+}
+
+.animate-vercel3 {
+  animation: vercel3__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercel3__transform {
+  0%,
+  100% {
+    @apply bg-base-content;
+  }
+  16.67% {
+    @apply bg-base-content;
+  }
+  33.33% {
+    @apply bg-base-content;
+  }
+  50.00% {
+    @apply bg-base-content;
+  }
+  66.67% {
+    @apply bg-accent-focus;
+  }
+  83.33% {
+    @apply bg-accent-focus;
+  }
+}
+
+.animate-vercelfull {
+  animation: vercelfull__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercelfull__transform {
+  0%,
+  100% {
+    @apply bg-primary;
+  }
+  16.67% {
+    @apply bg-primary;
+  }
+  33.33% {
+    @apply bg-secondary;
+  }
+  50.00% {
+    @apply bg-secondary;
+  }
+  66.67% {
+    @apply bg-accent;
+  }
+  83.33% {
+    @apply bg-accent;
   }
 }
