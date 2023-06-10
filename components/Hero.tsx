@@ -1,46 +1,40 @@
 import React from 'react';
 
 import Image from 'next/image';
-import { HiDownload } from 'react-icons/hi';
+import HeroBtns from './HeroBtns';
 
 const Hero = (props: any) => {
   const name = props.name;
   return (
     <section
       id="home"
-      className="flex w-full items-center justify-center py-20 sm:min-h-screen"
+      className="flex w-full items-center justify-center py-20 lg:min-h-screen"
     >
-      <div className="flex w-full flex-col-reverse gap-6 sm:flex-row">
-        <div className="flex flex-1 justify-center">
-          <div className="flex w-fit flex-col">
-            <p className="prose font-light">Hi, my name is</p>
-            <p className="inline-block bg-gradient-to-r from-primary-focus to-primary bg-clip-text text-7xl font-black uppercase text-transparent">
+      <div className="flex w-full flex-col gap-10 lg:flex-row">
+        <div className="flex-1">
+          <div className="prose mx-auto w-fit lg:mx-0">
+            <p>Hi, my name is</p>
+            <h1 className="my-0 w-fit bg-gradient-to-r from-primary-focus to-primary bg-clip-text text-7xl uppercase text-transparent sm:text-9xl">
               {name.first}
-            </p>
-            <p className="inline-block bg-gradient-to-r from-secondary-focus to-secondary bg-clip-text text-7xl font-black uppercase text-transparent">
+            </h1>
+            <h1 className="my-0 w-fit bg-gradient-to-r from-secondary-focus to-secondary bg-clip-text text-7xl uppercase text-transparent sm:text-9xl">
               {name.last}
-            </p>
-            <p className="prose font-light">I am a</p>
-            <p className="text-lg font-semibold">{name.title}</p>
-            <div className="flex gap-4 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
-              <a href="#about" className="btn-active">
-                About me
-              </a>
-              <a href="/cv" target="_blank">
-                My resume
-              </a>
-            </div>
+            </h1>
+            <p>I am a</p>
+            <h2 className="my-0 text-lg sm:text-3xl">{name.title}</h2>
           </div>
         </div>
-        <div className="flex flex-1 items-center justify-center">
-          <div className="blob w-fit overflow-hidden bg-gradient-to-r from-primary to-secondary">
+        <div className="flex flex-1 justify-center lg:justify-end">
+          <div className="flex flex-col justify-between">
             <Image
               src={name.avatar}
-              width={256}
-              height={256}
+              width={512}
+              height={512}
               priority={true}
               alt="avatar"
+              className="animate-blob aspect-square w-48 overflow-hidden bg-gradient-to-r from-primary to-secondary sm:w-72"
             />
+            <HeroBtns />
           </div>
         </div>
       </div>

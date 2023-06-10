@@ -22,7 +22,7 @@ export default async function Home() {
   const [meta, repo] = await Promise.all([metaData, repoData]);
 
   return (
-    <div className="w-full px-4">
+    <div className="w-full px-4 sm:px-8">
       <Hero name={meta.links.name} />
       <About
         hello={meta.hello}

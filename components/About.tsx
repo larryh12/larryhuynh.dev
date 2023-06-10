@@ -11,9 +11,9 @@ const About = (props: any) => {
   return (
     <section id="about" className="flex w-full py-20">
       <div className="flex w-full flex-col">
-        <SectionHead title="! About" />
+        <SectionHead title="About" />
 
-        <div className="flex flex-col gap-10 sm:flex-row">
+        <div className="flex flex-col gap-10 lg:flex-row">
           <div className="prose flex-1">
             <h2>{hello.head}</h2>
             <ul></ul>
@@ -22,8 +22,8 @@ const About = (props: any) => {
             ))}
           </div>
 
-          <div className="prose flex-1 sm:text-right">
-            <h2>Qualifications</h2>
+          <div className="prose flex-1 lg:text-right">
+            <h2>🎓 Qualifications</h2>
             {qual.map((entry: any, index: number) => (
               <div key={index}>
                 <h3>{entry.head.title}</h3>
@@ -34,18 +34,18 @@ const About = (props: any) => {
                     {entry.head.subtitle}
                   </a>
                 </h4>
-                <ul className="sm:list-none">
+                <ul className="lg:list-none">
                   {entry.body.map((item: string, index: number) => (
                     <li key={index}>{item}</li>
                   ))}
                 </ul>
               </div>
             ))}
-            <h2>Certifications</h2>
+            <h2>📜 Certifications</h2>
             {cert.map((entry: any, index: number) => (
-              <h4 key={index} className="grid grid-cols-2">
-                <span className="sm:ml-10 sm:text-left">{entry.year}</span>
-                <span>{entry.title}</span>
+              <h4 key={index} className="flex justify-between">
+                <span className="flex-2">{entry.title}</span>
+                <span className="flex-1 text-right">{entry.year}</span>
               </h4>
             ))}
           </div>
@@ -63,6 +63,7 @@ const About = (props: any) => {
                 alt={skill.title}
                 width={15}
                 height={15}
+                loading="lazy"
                 className="my-0"
               />
               {skill.title}

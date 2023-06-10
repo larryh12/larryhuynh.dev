@@ -12,15 +12,6 @@ const Sidebar = () => {
       <ul className="menu menu-horizontal w-full justify-center text-xl">
         <SideBtns />
       </ul>
-      <div className="mt-4 flex flex-col items-center">
-        <a
-          className="btn-outline btn-active btn-sm btn normal-case"
-          href="/cv"
-          target="_blank"
-        >
-          <HiDownload className="text-lg" /> Resume / CV
-        </a>
-      </div>
     </div>
   );
 };
