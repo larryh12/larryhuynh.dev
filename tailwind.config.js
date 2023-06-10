@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
-    darkTheme: 'rosepine-night',
+    darkTheme: 'rosepine-moon',
     themes: [
       {
         'rosepine-dawn': {
