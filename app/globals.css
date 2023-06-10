@@ -38,10 +38,10 @@
 @keyframes vercel1__transform {
   0%,
   100% {
-    @apply bg-primary-focus;
+    @apply bg-primary;
   }
   16.67% {
-    @apply bg-primary-focus;
+    @apply bg-primary;
   }
   33.33% {
     @apply bg-base-content;
@@ -70,10 +70,10 @@
     @apply bg-base-content;
   }
   33.33% {
-    @apply bg-secondary-focus;
+    @apply bg-secondary;
   }
   50.00% {
-    @apply bg-secondary-focus;
+    @apply bg-secondary;
   }
   66.67% {
     @apply bg-base-content;
@@ -102,10 +102,10 @@
     @apply bg-base-content;
   }
   66.67% {
-    @apply bg-accent-focus;
+    @apply bg-accent;
   }
   83.33% {
-    @apply bg-accent-focus;
+    @apply bg-accent;
   }
 }
 
