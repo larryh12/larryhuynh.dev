@@ -35,7 +35,7 @@ const Hero = (props: any) => {
                 height={512}
                 priority={true}
                 alt="avatar"
-                className="animate-vercelfull aspect-square w-48 sm:w-72"
+                className="animate-vercelfull h-48 w-48 sm:h-72 sm:w-72"
               />
             </div>
 
