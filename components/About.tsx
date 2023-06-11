@@ -46,10 +46,10 @@ const About = (props: any) => {
             ))}
             <h2>📜 Certifications</h2>
             {cert.map((entry: any, index: number) => (
-              <h4 key={index} className="flex justify-between">
-                <span className="flex-2">{entry.title}</span>
+              <h3 key={index} className="my-4 flex justify-between text-base">
+                <span className="flex-2 lg:flex-1">{entry.title}</span>
                 <span className="flex-1 text-right">{entry.year}</span>
-              </h4>
+              </h3>
             ))}
           </div>
         </div>
