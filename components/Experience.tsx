@@ -59,7 +59,7 @@ const Experience = (props: any) => {
                       className="h-full rounded-2xl object-cover"
                     />
                   </figure>
-                  <div className="card-body text-base-content/80">
+                  <div className="card-body font-normal text-base-content/80">
                     <h2 className="card-title text-base-content/100">
                       {proj.name}
                     </h2>
@@ -68,7 +68,7 @@ const Experience = (props: any) => {
                       {proj.topics.map((topic: string) => (
                         <li
                           key={topic}
-                          className="badge badge-outline badge-sm"
+                          className="badge badge-outline badge-sm sm:badge-md"
                         >
                           {topic}
                         </li>
