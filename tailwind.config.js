@@ -32,8 +32,6 @@ module.exports = {
           accent: '#ea9d34',
           neutral: '#f4ede8',
           'base-100': '#faf4ed',
-          'base-200': '#fffaf3',
-          'base-300': '#f2e9e1',
         },
       },
       {
@@ -43,8 +41,6 @@ module.exports = {
           accent: '#f6c177',
           neutral: '#2a283e',
           'base-100': '#232136',
-          'base-200': '#2a273f',
-          'base-300': '#393552',
         },
       },
       {
@@ -54,8 +50,6 @@ module.exports = {
           accent: '#f6c177',
           neutral: '#21202e',
           'base-100': '#191724',
-          'base-200': '#1f1d2e',
-          'base-300': '#26233a',
         },
       },
       {

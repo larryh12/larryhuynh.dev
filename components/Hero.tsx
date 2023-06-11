@@ -8,9 +8,9 @@ const Hero = (props: any) => {
   return (
     <section
       id="home"
-      className="flex w-full items-center justify-center py-20 lg:min-h-screen"
+      className="flex w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8 lg:min-h-screen"
     >
-      <div className="flex w-full flex-col gap-10 lg:flex-row">
+      <div className="flex w-full max-w-screen-lg flex-col gap-10 lg:flex-row">
         <div className="flex-1">
           <div className="prose mx-auto w-fit lg:mx-0">
             <p>Hi, my name is</p>

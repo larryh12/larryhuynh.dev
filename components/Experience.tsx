@@ -6,7 +6,7 @@ import aemo from '@/public/proj/aemo.png';
 
 import { HiExternalLink } from 'react-icons/hi';
 
-const Experience = () => {
+const Experience = (props: any) => {
   return (
     <section id="experience" className="flex px-8 py-16">
       <div className="experience__wrapper m-auto flex flex-col">
@@ -103,11 +103,11 @@ const Experience = () => {
                     extraction features for AEMO raw data source.
                   </p>
                   <ul className="card-actions mt-2">
-                    <li className="badge-outline badge">Python</li>
-                    <li className="badge-outline badge">pandas</li>
-                    <li className="badge-outline badge">NumPy</li>
-                    <li className="badge-outline badge">openpyxl</li>
-                    <li className="badge-outline badge">PySimpleGUI</li>
+                    <li className="badge badge-outline">Python</li>
+                    <li className="badge badge-outline">pandas</li>
+                    <li className="badge badge-outline">NumPy</li>
+                    <li className="badge badge-outline">openpyxl</li>
+                    <li className="badge badge-outline">PySimpleGUI</li>
                   </ul>
                 </div>
               </div>

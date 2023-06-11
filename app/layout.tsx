@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="m-auto max-w-screen-lg">
+      <body className=" bg-slate-900">
         <div className="drawer drawer-end">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
