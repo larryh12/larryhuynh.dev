@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiDownload } from 'react-icons/hi';
 import NavItems from './NavItems';
 import SideBtns from './SideBtns';
 
