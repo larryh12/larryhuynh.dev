@@ -59,10 +59,6 @@ module.exports = {
           accent: '#179299',
           neutral: '#dce0e8',
           'base-100': '#eff1f5',
-          info: '#209fb5',
-          success: '#40a02b',
-          warning: '#df8e1d',
-          error: '#d20f39',
         },
       },
       {
@@ -72,10 +68,6 @@ module.exports = {
           accent: '#81c8be',
           neutral: '#232634',
           'base-100': '#303446',
-          info: '#85c1dc',
-          success: '#a6d189',
-          warning: '#e5c890',
-          error: '#e78284',
         },
       },
       {
@@ -85,10 +77,6 @@ module.exports = {
           accent: '#8bd5ca',
           neutral: '#181926',
           'base-100': '#24273a',
-          info: '#7dc4e4',
-          success: '#a6da95',
-          warning: '#eed49f',
-          error: '#ed8796',
         },
       },
       {
@@ -98,11 +86,9 @@ module.exports = {
           accent: '#94e2d5',
           neutral: '#11111b',
           'base-100': '#1e1e2e',
-          info: '#74c7ec',
-          success: '#a6e3a1',
-          warning: '#f9e2af',
-          error: '#f38ba8',
         },
+      },
+      {
         'geist-light': {
           primary: '#0070f3',
           secondary: '#7928ca',
@@ -110,6 +96,8 @@ module.exports = {
           neutral: '#fafafa',
           'base-100': '#fff',
         },
+      },
+      {
         'geist-dark': {
           primary: '#0070f3',
           secondary: '#7928ca',
