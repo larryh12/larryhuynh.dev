@@ -1,20 +1,18 @@
 import React from 'react';
 
 import Image from 'next/image';
-import griffith from '@/public/exp/griffith.png';
-import aemo from '@/public/proj/aemo.png';
-
-import { HiExternalLink } from 'react-icons/hi';
+import SectionHead from './SectionHead';
 
 const Experience = (props: any) => {
+  const exp = props.exp;
+
   return (
-    <section id="experience" className="flex px-8 py-16">
-      <div className="experience__wrapper m-auto flex flex-col">
-        <div className="experience__heading text-center">
-          <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
-            <p>Experience</p>
-            <div className="h-0.5 bg-gradient-to-r from-primary to-secondary" />
-          </div>
+    <section
+      id="experience"
+      className="flex w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8 lg:min-h-screen"
+    >
+      <div className="flex w-full max-w-screen-lg flex-col">
+        {/* <div className="experience__heading text-center">
 
           <div className="experience__main pt-8">
             <div className="experience__main__caeepr space-y-8 text-left">
@@ -113,6 +111,38 @@ const Experience = (props: any) => {
               </div>
             </div>
           </div>
+        </div> */}
+        <SectionHead title="Experience" />
+        <div className="flex flex-col">
+          {exp.map((entry: any, index: number) => (
+            <div key={index} className="">
+              <div className="flex flex-wrap-reverse justify-between">
+                <div className="prose">
+                  <h2>{entry.head.title}</h2>
+                  <h3 className="w-fit">
+                    <a href={entry.head.link} target="_blank">
+                      {entry.head.name}
+                    </a>
+                  </h3>
+                  <h4>{entry.head.time}</h4>
+                </div>
+                <Image
+                  src={entry.head.image}
+                  alt={entry.head.name}
+                  width={128}
+                  height={128}
+                  className="object-contain p-2"
+                />
+              </div>
+              <div className="prose">
+                <ul>
+                  {entry.body.map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

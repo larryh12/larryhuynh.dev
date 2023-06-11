@@ -35,7 +35,7 @@ export default async function Home() {
         cert={meta.cert}
         tech={meta.tech}
       />
-      {/* <Experience exp={meta.exp} projs={projs} /> */}
+      <Experience exp={meta.exp} projs={projs} />
     </div>
   );
 }
