@@ -13,6 +13,8 @@ const themes = [
   'catppuccin-frappe',
   'catppuccin-macchiato',
   'catppuccin-mocha',
+  'geist-light',
+  'geist-dark',
 ];
 
 const ThemeBtn = () => {
