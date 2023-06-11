@@ -6,15 +6,15 @@ import { HiOutlineColorSwatch } from 'react-icons/hi';
 import { themeChange } from 'theme-change';
 
 const themes = [
-  'rosepine-dawn',
-  'rosepine-moon',
-  'rosepine-night',
-  'catppuccin-latte',
-  'catppuccin-frappe',
-  'catppuccin-macchiato',
-  'catppuccin-mocha',
-  'geist-light',
-  'geist-dark',
+  'dawn',
+  'moon',
+  'night',
+  'latte',
+  'frappe',
+  'macchiato',
+  'mocha',
+  'light',
+  'dark',
 ];
 
 const ThemeBtn = () => {
@@ -27,7 +27,7 @@ const ThemeBtn = () => {
         <HiOutlineColorSwatch className="text-2xl" />
         <span className="hidden sm:inline">Themes</span>
       </summary>
-      <div className="dropdown-content rounded-box w-64 max-w-[80svw] space-y-2 bg-base-100 p-2 drop-shadow-lg">
+      <div className="dropdown-content rounded-box w-48 space-y-2 bg-neutral/90 p-3 drop-shadow-2xl">
         {themes.map((theme, index) => (
           <button
             key={index}
@@ -51,7 +51,6 @@ const ThemeBtn = () => {
               <div className="bg-primary" />
               <div className="bg-secondary" />
               <div className="bg-accent" />
-              <div className="bg-neutral" />
             </div>
           </button>
         ))}

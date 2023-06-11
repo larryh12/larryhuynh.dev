@@ -23,10 +23,10 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
-    darkTheme: 'rosepine-moon',
+    darkTheme: 'moon',
     themes: [
       {
-        'rosepine-dawn': {
+        dawn: {
           primary: '#b4637a',
           secondary: '#286983',
           accent: '#ea9d34',
@@ -35,7 +35,7 @@ module.exports = {
         },
       },
       {
-        'rosepine-moon': {
+        moon: {
           primary: '#eb6f92',
           secondary: '#3e8fb0',
           accent: '#f6c177',
@@ -44,7 +44,7 @@ module.exports = {
         },
       },
       {
-        'rosepine-night': {
+        night: {
           primary: '#eb6f92',
           secondary: '#31748f',
           accent: '#f6c177',
@@ -53,7 +53,7 @@ module.exports = {
         },
       },
       {
-        'catppuccin-latte': {
+        latte: {
           primary: '#7287fd',
           secondary: '#dd7878',
           accent: '#179299',
@@ -62,7 +62,7 @@ module.exports = {
         },
       },
       {
-        'catppuccin-frappe': {
+        frappe: {
           primary: '#babbf1',
           secondary: '#ea999c',
           accent: '#81c8be',
@@ -71,7 +71,7 @@ module.exports = {
         },
       },
       {
-        'catppuccin-macchiato': {
+        macchiato: {
           primary: '#b7bdf8',
           secondary: '#ee99a0',
           accent: '#8bd5ca',
@@ -80,7 +80,7 @@ module.exports = {
         },
       },
       {
-        'catppuccin-mocha': {
+        mocha: {
           primary: '#b4befe',
           secondary: '#eba0ac',
           accent: '#94e2d5',
@@ -89,7 +89,7 @@ module.exports = {
         },
       },
       {
-        'geist-light': {
+        light: {
           primary: '#0070f3',
           secondary: '#7928ca',
           accent: '#f5a623',
@@ -98,7 +98,7 @@ module.exports = {
         },
       },
       {
-        'geist-dark': {
+        dark: {
           primary: '#0070f3',
           secondary: '#7928ca',
           accent: '#f5a623',
