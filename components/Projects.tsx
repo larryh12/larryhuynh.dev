@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Image from 'next/image';
 
 const Projects = (props: any) => {
@@ -44,16 +43,18 @@ const Projects = (props: any) => {
                   className="h-full object-cover transition hover:scale-105"
                 />
               </a>
-              <div className="prose space-y-4 p-2 pb-10 text-base-content">
-                <h2 className="text-2xl font-semibold">{proj.name}</h2>
-                <p className="font-normal text-base-content/80">
+              <div className="prose flex flex-col gap-4 p-2 pb-10">
+                <h2 className="text-2xl font-semibold text-neutral-content">
+                  {proj.name}
+                </h2>
+                <p className="flex-1 font-normal text-neutral-content/80">
                   {proj.description}
                 </p>
                 <ul className="flex flex-wrap gap-2">
                   {proj.topics.map((topic: string) => (
                     <li
                       key={topic}
-                      className="w-fit rounded-full bg-base-100 px-3 py-0.5 text-sm font-medium"
+                      className="w-fit rounded-full bg-base-100 px-3 py-0.5 text-sm font-medium text-base-content"
                     >
                       {`#${topic}`}
                     </li>
