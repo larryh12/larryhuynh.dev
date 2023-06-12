@@ -1,6 +1,5 @@
 import React from 'react';
-
-import SectionHead from './SectionHead';
+import Image from 'next/image';
 
 const About = (props: any) => {
   const hello = props.hello;
@@ -13,11 +12,13 @@ const About = (props: any) => {
       id="about"
       className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
     >
-      <div className="flex w-full max-w-screen-lg flex-col">
-        <SectionHead title="About" />
+      <div className="prose w-full max-w-screen-lg">
+        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          About
+        </h1>
 
-        <div className="prose flex max-w-none flex-col gap-10 lg:flex-row">
-          <div className="flex-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div>
             <h2>{hello.head}</h2>
             <ul></ul>
             {hello.body.map((line: string, index: number) => (
@@ -25,14 +26,14 @@ const About = (props: any) => {
             ))}
           </div>
 
-          <div className="flex-1 lg:text-right">
+          <div className="lg:text-right">
             <h2>🎓 Qualifications</h2>
             {qual.map((entry: any, index: number) => (
               <div key={index}>
                 <h3>{entry.head.title}</h3>
                 <h4 className="space-x-2">
-                  <span>{entry.head.year}</span>
-                  <span>|</span>
+                  {entry.head.year}
+                  {' | '}
                   <a className="underline-offset-2" href={entry.head.link}>
                     {entry.head.subtitle}
                   </a>
@@ -55,27 +56,26 @@ const About = (props: any) => {
           </div>
         </div>
 
-        <div className="prose my-10">
+        <div>
           <h2>{tech.head}</h2>
-        </div>
-        <div className="flex flex-wrap gap-4">
-          {tech.body.map((skill: any, index: number) => (
-            <div
-              key={index}
-              className="btn-neutral btn bg-base-100 normal-case"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`https://cdn.simpleicons.org/${skill.slug}`}
-                alt={skill.title}
-                width={15}
-                height={15}
-                loading="lazy"
-                className="my-0"
-              />
-              {skill.title}
-            </div>
-          ))}
+          <div className="flex flex-wrap gap-4">
+            {tech.body.map((skill: any) => (
+              <button
+                key={skill.slug}
+                aria-label={skill.title}
+                className="btn-neutral btn bg-base-100 normal-case"
+              >
+                <Image
+                  src={`https://cdn.simpleicons.org/${skill.slug}`}
+                  alt={skill.title}
+                  width={15}
+                  height={15}
+                  className="my-0"
+                />
+                {skill.title}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>
