@@ -50,7 +50,7 @@ const Experience = (props: any) => {
                   href={proj.html_url}
                   aria-label={proj.name}
                   target="_blank"
-                  className="not-prose mt-10 grid grid-cols-1 gap-4 rounded-2xl no-underline transition hover:bg-neutral sm:grid-cols-2"
+                  className="not-prose mt-10 grid grid-cols-1 gap-5 rounded-2xl no-underline transition hover:bg-neutral sm:grid-cols-2 lg:gap-10"
                 >
                   <a
                     href={proj.homepage === '' ? proj.html_url : proj.homepage}
@@ -64,15 +64,12 @@ const Experience = (props: any) => {
                       className="h-full object-cover transition hover:scale-105"
                     />
                   </a>
-                  <div className="prose grid gap-4 p-2">
+                  <div className="prose grid gap-4 px-2 pb-10 sm:pb-0">
                     <h2 className="text-2xl text-base-content">{proj.name}</h2>
                     <p className="font-normal">{proj.description}</p>
                     <ul className="card-actions">
                       {proj.topics.map((topic: string) => (
-                        <li
-                          key={topic}
-                          className="badge badge-neutral badge-sm sm:badge-md"
-                        >
+                        <li key={topic} className="badge badge-neutral">
                           {`#${topic}`}
                         </li>
                       ))}
