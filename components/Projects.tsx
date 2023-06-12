@@ -28,7 +28,7 @@ const Projects = (props: any) => {
               href={proj.html_url}
               aria-label={proj.name}
               target="_blank"
-              className="not-prose flex flex-col gap-4 rounded-2xl no-underline transition hover:bg-base-100"
+              className="not-prose flex flex-col gap-2 rounded-2xl no-underline transition hover:bg-base-100"
             >
               <a
                 target="_blank"
@@ -43,18 +43,18 @@ const Projects = (props: any) => {
                   className="h-full object-cover transition hover:scale-105"
                 />
               </a>
-              <div className="prose flex flex-col gap-4 p-2 pb-10">
+              <div className="prose flex flex-col gap-4 p-4 pb-10">
                 <h2 className="text-2xl font-semibold text-neutral-content">
                   {proj.name}
                 </h2>
                 <p className="flex-1 font-normal text-neutral-content/80">
                   {proj.description}
                 </p>
-                <ul className="flex flex-wrap gap-2">
+                <ul className="flex flex-wrap gap-1.5">
                   {proj.topics.map((topic: string) => (
                     <li
                       key={topic}
-                      className="w-fit rounded-full bg-base-100 px-3 py-0.5 text-sm font-medium text-base-content"
+                      className="w-fit rounded-full bg-base-100 px-2 py-0.5 text-sm font-medium text-base-content"
                     >
                       {`#${topic}`}
                     </li>

@@ -48,7 +48,7 @@ const Experience = (props: any) => {
                   href={proj.html_url}
                   aria-label={proj.name}
                   target="_blank"
-                  className="not-prose mt-10 grid grid-cols-1 gap-4 rounded-2xl no-underline transition hover:bg-neutral sm:grid-cols-2 sm:gap-8"
+                  className="not-prose mt-10 grid grid-cols-1 gap-2 rounded-2xl no-underline transition hover:bg-neutral sm:grid-cols-2 sm:gap-6"
                 >
                   <a
                     target="_blank"
@@ -63,18 +63,18 @@ const Experience = (props: any) => {
                       className="h-full object-cover transition hover:scale-105"
                     />
                   </a>
-                  <div className="prose flex flex-col gap-4 p-2 pb-10 sm:pb-2">
+                  <div className="prose flex flex-col gap-4 p-4 pb-10 sm:pb-4">
                     <h2 className="text-2xl font-semibold text-base-content">
                       {proj.name}
                     </h2>
                     <p className="flex-1 font-normal text-base-content/80">
                       {proj.description}
                     </p>
-                    <ul className="flex flex-wrap gap-2">
+                    <ul className="flex flex-wrap gap-1.5">
                       {proj.topics.map((topic: string) => (
                         <li
                           key={topic}
-                          className="w-fit rounded-full bg-neutral px-3 py-0.5 text-sm font-medium text-neutral-content"
+                          className="w-fit rounded-full bg-neutral px-2 py-0.5 text-sm font-medium text-neutral-content"
                         >
                           {`#${topic}`}
                         </li>
