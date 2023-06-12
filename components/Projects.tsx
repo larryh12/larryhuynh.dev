@@ -1,221 +1,67 @@
 import React from 'react';
 
 import Image from 'next/image';
-import flixx from '@/public/proj/flixx.png';
-import qotd from '@/public/proj/qotd.png';
-import metaversus from '@/public/proj/metaversus.png';
-import hoobank from '@/public/proj/hoobank.png';
-import gpt3 from '@/public/proj/gpt3.png';
 
-import { SiGithub } from 'react-icons/si';
+const Projects = (props: any) => {
+  const expProjs = props.exp.reduce(
+    (accumulator: Array<string>, expEntry: { work: Array<string> }) => {
+      return accumulator.concat(expEntry.work);
+    },
+    []
+  );
+  const projs = props.projs.filter(
+    (proj: any) => !expProjs.includes(proj.name)
+  );
 
-const Projects = () => {
   return (
-    <section id="projects" className="flex px-8 py-16">
-      <div className="projects__wrapper m-auto flex flex-col">
-        <div className="projects__heading text-center">
-          <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
-            <p>Projects</p>
-            <div className="h-0.5 bg-gradient-to-r from-primary to-secondary" />
-          </div>
-        </div>
-
-        <div className="project__main space-y-16 pt-8">
-          <div className="project__main__apps space-y-8">
-            <p className="pma__head text-center text-xl font-semibold">
-              Web Apps
-            </p>
-            <div className="pma__body grid grid-cols-1 gap-8 sm:grid-cols-2">
-              <div className="card-normal card static bg-neutral shadow-2xl">
-                <figure>
-                  <a target="_blank" href="https://flixx-larryh12.vercel.app/">
-                    <Image
-                      src={flixx}
-                      alt="flixx"
-                      className="transition hover:scale-105"
-                    />
-                  </a>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">FLIXX</h2>
-                  <ul className="flex flex-wrap gap-2">
-                    <li className="badge badge-info">HTML</li>
-                    <li className="badge badge-success">CSS</li>
-                    <li className="badge badge-warning">JavaScript</li>
-                    <li className="badge badge-error">REST API</li>
-                  </ul>
-                  <p>
-                    Interactive web app for trending Movie, TV Show, and Anime
-                    info from TheMovieDB and MyAnimeList.
-                  </p>
-                  <div className="card-actions mt-2 justify-end">
-                    <a
-                      aria-label="https://github.com/larryh12/flixx-app"
-                      target="_blank"
-                      href="https://github.com/larryh12/flixx-app"
-                      className="btn-outline btn gap-2"
+    <section
+      id="projects"
+      className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
+    >
+      <div className="prose w-full max-w-screen-lg">
+        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          Projects
+        </h1>
+        <div className="mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2">
+          {projs.map((proj: any) => (
+            <a
+              key={proj.name}
+              href={proj.html_url}
+              aria-label={proj.name}
+              target="_blank"
+              className="not-prose flex flex-col gap-4 rounded-2xl no-underline transition hover:bg-base-100"
+            >
+              <a
+                target="_blank"
+                href={proj.homepage === '' ? proj.html_url : proj.homepage}
+                className="overflow-hidden rounded-2xl drop-shadow-lg"
+              >
+                <Image
+                  src={`https://raw.githubusercontent.com/larryh12/${proj.name}/main/docs/_og.png`}
+                  alt={proj.name}
+                  width={640}
+                  height={320}
+                  className="h-full object-cover transition hover:scale-105"
+                />
+              </a>
+              <div className="prose space-y-4 p-2 pb-10 text-base-content">
+                <h2 className="text-2xl font-semibold">{proj.name}</h2>
+                <p className="font-normal text-base-content/80">
+                  {proj.description}
+                </p>
+                <ul className="flex flex-wrap gap-2">
+                  {proj.topics.map((topic: string) => (
+                    <li
+                      key={topic}
+                      className="w-fit rounded-full bg-base-100 px-3 py-0.5 text-sm font-medium"
                     >
-                      <SiGithub />
-                      Se&#8203;e More
-                    </a>
-                  </div>
-                </div>
+                      {`#${topic}`}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="card-normal card static bg-neutral shadow-2xl">
-                <figure>
-                  <a
-                    target="_blank"
-                    href="https://github.com/marketplace/actions/github-readme-qotd"
-                  >
-                    <Image
-                      src={qotd}
-                      alt="qotd"
-                      className="transition hover:scale-105"
-                    />
-                  </a>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">GitHub Readme QotD</h2>
-                  <ul className="flex flex-wrap gap-2">
-                    <li className="badge badge-info">GitHub Actions</li>
-                    <li className="badge badge-success">Python</li>
-                    <li className="badge badge-warning">Docker</li>
-                    <li className="badge badge-error">CI/CD</li>
-                  </ul>
-                  <p>
-                    GitHub Actions workflow to automate your repo Readme update
-                    with a dynamic Quote of the Day section.
-                  </p>
-                  <div className="card-actions mt-2 justify-end">
-                    <a
-                      aria-label="https://github.com/larryh12/github-readme-qotd"
-                      target="_blank"
-                      href="https://github.com/larryh12/github-readme-qotd"
-                      className="btn-outline btn gap-2"
-                    >
-                      <SiGithub />
-                      Se&#8203;e More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="project__main__uiux space-y-8">
-            <p className="pmu__head text-center text-xl font-semibold">UI/UX</p>
-            <div className="pmu__body grid grid-cols-1 gap-8 sm:grid-cols-2">
-              <div className="card-normal card static bg-neutral shadow-2xl">
-                <figure>
-                  <a
-                    target="_blank"
-                    href="https://metaversus-larryh12.vercel.app/"
-                  >
-                    <Image
-                      src={metaversus}
-                      alt="metaversus"
-                      className="transition hover:scale-105"
-                    />
-                  </a>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">METAVERSUS</h2>
-                  <ul className="flex flex-wrap gap-2">
-                    <li className="badge badge-info">Next.js</li>
-                    <li className="badge badge-success">React</li>
-                    <li className="badge badge-warning">Tailwind CSS</li>
-                    <li className="badge badge-error">Framer Motion</li>
-                  </ul>
-                  <p>
-                    Re-creation of a modern front-end web design with the theme
-                    of the Metaverse.
-                  </p>
-                  <div className="card-actions mt-2 justify-end">
-                    <a
-                      aria-label="https://github.com/larryh12/metaversus-ui"
-                      target="_blank"
-                      href="https://github.com/larryh12/metaversus-ui"
-                      className="btn-outline btn gap-2"
-                    >
-                      <SiGithub />
-                      Se&#8203;e More
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="card-normal card static bg-neutral shadow-2xl">
-                <figure>
-                  <a
-                    target="_blank"
-                    href="https://hoobank-larryh12.vercel.app/"
-                  >
-                    <Image
-                      src={hoobank}
-                      alt="hoobank"
-                      className="transition hover:scale-105"
-                    />
-                  </a>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">HooBank</h2>
-                  <ul className="flex flex-wrap gap-2">
-                    <li className="badge badge-info">Next.js</li>
-                    <li className="badge badge-success">React</li>
-                    <li className="badge badge-warning">Tailwind CSS</li>
-                  </ul>
-                  <p>
-                    Re-creation of a modern front-end web design for a digital
-                    payment service website.
-                  </p>
-                  <div className="card-actions mt-2 justify-end">
-                    <a
-                      aria-label="https://github.com/larryh12/hoobank-ui"
-                      target="_blank"
-                      href="https://github.com/larryh12/hoobank-ui"
-                      className="btn-outline btn gap-2"
-                    >
-                      <SiGithub />
-                      Se&#8203;e More
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="card-normal card static bg-neutral shadow-2xl">
-                <figure>
-                  <a target="_blank" href="https://gpt3-larryh12.vercel.app/">
-                    <Image
-                      src={gpt3}
-                      alt="gpt3"
-                      className="transition hover:scale-105"
-                    />
-                  </a>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">GPT-3</h2>
-                  <ul className="flex flex-wrap gap-2">
-                    <li className="badge badge-info">Next.js</li>
-                    <li className="badge badge-success">React</li>
-                    <li className="badge badge-warning">Tailwind CSS</li>
-                  </ul>
-                  <p>
-                    Re-creation of a modern front-end web design with the
-                    concept of OpenAI&apos;s GPT-3.
-                  </p>
-                  <div className="card-actions mt-2 justify-end">
-                    <a
-                      aria-label="https://github.com/larryh12/gpt3-ui"
-                      target="_blank"
-                      href="https://github.com/larryh12/gpt3-ui"
-                      className="btn-outline btn gap-2"
-                    >
-                      <SiGithub />
-                      Se&#8203;e More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>

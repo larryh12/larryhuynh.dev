@@ -1,6 +1,7 @@
 import About from '@/components/About';
 import Experience from '@/components/Experience';
 import Hero from '@/components/Hero';
+import Projects from '@/components/Projects';
 
 const useMeta = async () => {
   const res = await fetch(
@@ -27,7 +28,7 @@ export default async function Home() {
   const projs = repos.filter((repo: any) => repo.description !== null);
 
   return (
-    <div className="w-full">
+    <main className="w-full">
       <Hero name={meta.links.name} />
       <About
         hello={meta.hello}
@@ -36,6 +37,7 @@ export default async function Home() {
         tech={meta.tech}
       />
       <Experience exp={meta.exp} projs={projs} />
-    </div>
+      <Projects exp={meta.exp} projs={projs} />
+    </main>
   );
 }
