@@ -11,13 +11,13 @@ module.exports = {
         2: '2 2 0%',
       },
       minHeight: {
-        screen: '100svh',
+        screen: '100dvh',
       },
       height: {
-        screen: '100svh',
+        screen: '100dvh',
       },
       width: {
-        screen: '100svw',
+        screen: '100dvw',
       },
     },
   },

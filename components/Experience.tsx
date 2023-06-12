@@ -12,15 +12,17 @@ const Experience = (props: any) => {
       id="experience"
       className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
     >
-      <div className="flex w-full max-w-screen-lg flex-col">
-        <SectionHead title="Experience" />
+      <div className="prose w-full max-w-screen-lg">
+        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          Experience
+        </h1>
 
         {exp.map((entry: any, index: number) => (
-          <div key={index} className="prose max-w-none">
+          <div key={index}>
             <div className="flex flex-col-reverse sm:flex-row sm:justify-between">
               <div>
                 <h2>{entry.head.title}</h2>
-                <h3 className="w-fit">
+                <h3>
                   <a href={entry.head.link} target="_blank">
                     {entry.head.name}
                   </a>
@@ -45,32 +47,33 @@ const Experience = (props: any) => {
               .map((proj: any) => (
                 <a
                   key={proj.name}
-                  href={proj.homepage === '' ? proj.html_url : proj.homepage}
+                  href={proj.html_url}
                   aria-label={proj.name}
                   target="_blank"
-                  className="not-prose card card-compact no-underline transition sm:card-side sm:card-normal hover:bg-neutral"
+                  className="not-prose mt-10 grid grid-cols-1 gap-4 rounded-2xl no-underline transition hover:bg-neutral sm:grid-cols-2"
                 >
-                  <figure>
+                  <a
+                    href={proj.homepage === '' ? proj.html_url : proj.homepage}
+                    className="overflow-hidden rounded-2xl bg-primary"
+                  >
                     <Image
                       src={`https://raw.githubusercontent.com/larryh12/${proj.name}/main/docs/_og.png`}
                       alt={proj.name}
                       width={640}
                       height={320}
-                      className="h-full rounded-2xl object-cover"
+                      className="h-full object-cover transition hover:scale-105"
                     />
-                  </figure>
-                  <div className="card-body font-normal text-base-content/80">
-                    <h2 className="card-title text-base-content/100">
-                      {proj.name}
-                    </h2>
-                    <p>{proj.description}</p>
-                    <ul className="card-actions mt-2">
+                  </a>
+                  <div className="prose grid gap-4 p-2">
+                    <h2 className="text-2xl text-base-content">{proj.name}</h2>
+                    <p className="font-normal">{proj.description}</p>
+                    <ul className="card-actions">
                       {proj.topics.map((topic: string) => (
                         <li
                           key={topic}
-                          className="badge badge-outline badge-sm sm:badge-md"
+                          className="badge badge-neutral badge-sm sm:badge-md"
                         >
-                          {topic}
+                          {`#${topic}`}
                         </li>
                       ))}
                     </ul>

@@ -34,9 +34,7 @@ const About = (props: any) => {
                 <h4 className="space-x-2">
                   {entry.head.year}
                   {' | '}
-                  <a className="underline-offset-2" href={entry.head.link}>
-                    {entry.head.subtitle}
-                  </a>
+                  <a href={entry.head.link}>{entry.head.subtitle}</a>
                 </h4>
                 <ul className="lg:list-none">
                   {entry.body.map((item: string, index: number) => (
