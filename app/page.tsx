@@ -1,28 +1,45 @@
-import Navbar from '@/components/Navbar';
-import Sidebar from '@/components/Sidebar';
-import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Experience from '@/components/Experience';
-import Projects from '@/components/Projects';
 import Contacts from '@/components/Contacts';
+import Experience from '@/components/Experience';
+import Hero from '@/components/Hero';
+import Projects from '@/components/Projects';
 
-export default function Home() {
+const useMeta = async () => {
+  const res = await fetch(
+    'https://raw.githubusercontent.com/larryh12/larryh12/main/public/meta.json',
+    { next: { revalidate: 60 } }
+  );
+  return res.json();
+};
+
+const useRepo = async () => {
+  const res = await fetch(
+    'https://api.github.com/users/larryh12/repos?sort=updated&direction=desc',
+    {
+      next: { revalidate: 60 },
+    }
+  );
+  return res.json();
+};
+
+export default async function Home() {
+  const metaData = useMeta();
+  const repoData = useRepo();
+  const [meta, repos] = await Promise.all([metaData, repoData]);
+  const projs = repos.filter((repo: any) => repo.description !== null);
+
   return (
-    <div className="drawer drawer-end">
-      <label htmlFor="my-drawer"></label>
-      <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col scroll-smooth">
-        <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contacts />
-      </div>
-      <div className="drawer-side">
-        <label htmlFor="my-drawer" className="drawer-overlay"></label>
-        <Sidebar />
-      </div>
-    </div>
+    <main className="w-full">
+      <Hero name={meta.links.name} />
+      <About
+        hello={meta.hello}
+        qual={meta.qual}
+        cert={meta.cert}
+        tech={meta.tech}
+      />
+      <Experience exp={meta.exp} projs={projs} />
+      <Projects exp={meta.exp} projs={projs} />
+      <Contacts links={meta.links} />
+    </main>
   );
 }

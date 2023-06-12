@@ -1,4 +1,12 @@
+import { Inter } from 'next/font/google';
+import Navbar from '@/components/Navbar';
+import Sidebar from '@/components/Sidebar';
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'larryhuynh.dev',
@@ -11,8 +19,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="m-auto max-w-screen-lg">{children}</body>
+    <html lang="en" className={`${inter.className} scroll-smooth`}>
+      <body>
+        <div className="drawer drawer-end">
+          <input
+            id="my-drawer"
+            type="checkbox"
+            className="drawer-toggle"
+            aria-label="my-drawer"
+          />
+          <div className="drawer-content">
+            <Navbar />
+            {children}
+          </div>
+          <div className="drawer-side lg:hidden">
+            <Sidebar />
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

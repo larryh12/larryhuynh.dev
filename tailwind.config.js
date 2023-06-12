@@ -10,103 +10,102 @@ module.exports = {
       flex: {
         2: '2 2 0%',
       },
+      minHeight: {
+        screen: '100dvh',
+      },
+      height: {
+        screen: '100dvh',
+      },
+      width: {
+        screen: '100dvw',
+      },
     },
   },
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
-    darkTheme: 'rosepine-moon',
+    darkTheme: 'moon',
     themes: [
       {
-        'rosepine-dawn': {
-          primary: '#907aa9',
-          secondary: '#d7827e',
-          accent: '#907aa9',
-          neutral: '#faf4ed',
-          'base-100': '#fffaf3',
-          info: '#286983',
-          success: '#56949f',
-          warning: '#ea9d34',
-          error: '#b4637a',
+        dawn: {
+          primary: '#b4637a',
+          secondary: '#286983',
+          accent: '#ea9d34',
+          neutral: '#f4ede8',
+          'base-100': '#faf4ed',
         },
       },
       {
-        'rosepine-moon': {
-          primary: '#c4a7e7',
-          secondary: '#ea9a97',
-          accent: '#c4a7e7',
-          neutral: '#2a273f',
-          'base-100': '#232136',
-          info: '#3e8fb0',
-          success: '#9ccfd8',
-          warning: '#f6c177',
-          error: '#eb6f92',
-        },
-      },
-      {
-        'rosepine-night': {
-          primary: '#c4a7e7',
-          secondary: '#ebbcba',
+        moon: {
+          primary: '#eb6f92',
+          secondary: '#3e8fb0',
           accent: '#f6c177',
-          neutral: '#191724',
-          'base-100': '#1f1d2e',
-          info: '#31748f',
-          success: '#9ccfd8',
-          warning: '#f6c177',
-          error: '#eb6f92',
+          neutral: '#2a283e',
+          'base-100': '#232136',
         },
       },
       {
-        'catppuccin-latte': {
-          primary: '#1e66f5',
-          secondary: '#ea76cb',
+        night: {
+          primary: '#eb6f92',
+          secondary: '#31748f',
+          accent: '#f6c177',
+          neutral: '#21202e',
+          'base-100': '#191724',
+        },
+      },
+      {
+        latte: {
+          primary: '#7287fd',
+          secondary: '#dd7878',
           accent: '#179299',
-          neutral: '#dce0e8',
+          neutral: '#e6e9ef',
           'base-100': '#eff1f5',
-          info: '#209fb5',
-          success: '#40a02b',
-          warning: '#df8e1d',
-          error: '#d20f39',
         },
       },
       {
-        'catppuccin-frappe': {
-          primary: '#8caaee',
-          secondary: '#f4b8e4',
+        frappe: {
+          primary: '#babbf1',
+          secondary: '#ea999c',
           accent: '#81c8be',
-          neutral: '#232634',
+          neutral: '#292c3c',
           'base-100': '#303446',
-          info: '#85c1dc',
-          success: '#a6d189',
-          warning: '#e5c890',
-          error: '#e78284',
         },
       },
       {
-        'catppuccin-macchiato': {
-          primary: '#8aadf4',
-          secondary: '#f5bde6',
+        macchiato: {
+          primary: '#b7bdf8',
+          secondary: '#ee99a0',
           accent: '#8bd5ca',
-          neutral: '#181926',
+          neutral: '#1e2030',
           'base-100': '#24273a',
-          info: '#7dc4e4',
-          success: '#a6da95',
-          warning: '#eed49f',
-          error: '#ed8796',
         },
       },
       {
-        'catppuccin-mocha': {
-          primary: '#89b4fa',
-          secondary: '#f5c2e7',
+        mocha: {
+          primary: '#b4befe',
+          secondary: '#eba0ac',
           accent: '#94e2d5',
-          neutral: '#11111b',
+          neutral: '#181825',
           'base-100': '#1e1e2e',
-          info: '#74c7ec',
-          success: '#a6e3a1',
-          warning: '#f9e2af',
-          error: '#f38ba8',
+        },
+      },
+      {
+        light: {
+          primary: '#0070f3',
+          secondary: '#7928ca',
+          accent: '#f5a623',
+          neutral: '#fafafa',
+          'base-100': '#fff',
+        },
+      },
+      {
+        dark: {
+          primary: '#0070f3',
+          secondary: '#7928ca',
+          accent: '#f5a623',
+          neutral: '#111',
+          'base-100': '#000',
         },
       },
     ],
   },
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
 };

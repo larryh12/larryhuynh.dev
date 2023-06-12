@@ -1,119 +1,95 @@
 import React from 'react';
-
 import Image from 'next/image';
-import griffith from '@/public/exp/griffith.png';
-import aemo from '@/public/proj/aemo.png';
 
-import { HiExternalLink } from 'react-icons/hi';
+const Experience = (props: any) => {
+  const exp = props.exp;
+  const projs = props.projs;
 
-const Experience = () => {
   return (
-    <section id="experience" className="flex px-8 py-16">
-      <div className="experience__wrapper m-auto flex flex-col">
-        <div className="experience__heading text-center">
-          <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
-            <p>Experience</p>
-            <div className="h-0.5 bg-gradient-to-r from-primary to-secondary" />
-          </div>
+    <section
+      id="experience"
+      className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
+    >
+      <div className="prose w-full max-w-screen-lg">
+        <h1 className="mx-auto my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          Experience
+        </h1>
 
-          <div className="experience__main pt-8">
-            <div className="experience__main__caeepr space-y-8 text-left">
-              <div className="emc__header flex gap-4">
-                <div className="m-auto">
-                  <Image
-                    src={griffith}
-                    width={64}
-                    height={64}
-                    alt="griffith-logo"
-                    className=""
-                  />
-                </div>
-
-                <ul className="flex-1">
-                  <li className="text-xl font-semibold">
-                    Software Developer @
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.griffith.edu.au/griffith-business-school/research/centre-applied-energy-economics-policy-research"
-                      target="_blank"
-                      className="flex items-center gap-1 text-lg font-medium"
-                    >
-                      CAEEPR <HiExternalLink />
-                    </a>
-                  </li>
-                  <li className="font-medium text-accent">
-                    07/2022 - 11/2022 | Internship
-                  </li>
-                </ul>
+        {exp.map((entry: any, index: number) => (
+          <div key={index}>
+            <div className="flex flex-col-reverse sm:flex-row sm:justify-between">
+              <div>
+                <h2>{entry.head.title}</h2>
+                <h3>
+                  <a href={entry.head.link} target="_blank">
+                    {entry.head.name}
+                  </a>
+                </h3>
+                <h4>{entry.head.time}</h4>
               </div>
-
-              <ul className="emc__content space-y-4">
-                <li>
-                  • Developed an efficient and effective data extraction tool
-                  using Python frameworks for a large-scale data problem in the
-                  national electricity market research by AEMO and CAEEPR.
-                </li>
-                <li>
-                  • Enhanced the staff efficiency and productivity by automating
-                  the data extraction process, saving up to 80% of time and
-                  resources compared to manual methods.
-                </li>
-                <li>
-                  • Improved the data readability and accuracy by 2x by
-                  filtering and separating data by type and device identifiers.
-                </li>
-                <li>
-                  • Reduced the data size by 96% by removing duplicated and
-                  irrelevant entries, saving up to 70 MB of disk storage per
-                  file.
-                </li>
-                <li>
-                  • Provided valuable insights for future research on generator
-                  bidding strategies, allowing the staff to analyse and compare
-                  different scenarios and outcomes, improving the overall
-                  research quality by 3x.
-                </li>
-                <li>
-                  • Received Finalist Place for The Best Innovative Project in
-                  Trimester 2, 2022 out of 50 competing projects for delivering
-                  a user-friendly application that met the client&apos;s
-                  objectives and expectations.
-                </li>
-              </ul>
-
-              <div className="card card-normal static bg-neutral shadow-2xl sm:card-side">
-                <figure>
+              <div>
+                <Image
+                  src={entry.head.image}
+                  alt={entry.head.name}
+                  width={128}
+                  height={128}
+                  className="mask mask-squircle mx-auto mb-0 object-contain"
+                />
+              </div>
+            </div>
+            <ul>
+              {entry.body.map((item: string, index: number) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            {projs
+              .filter((proj: any) => entry.work.includes(proj.name))
+              .map((proj: any) => (
+                <div
+                  key={proj.name}
+                  className="not-prose mt-10 grid grid-cols-1 gap-2 rounded-2xl transition hover:bg-neutral sm:grid-cols-2 sm:gap-6"
+                >
                   <a
+                    href={proj.homepage === '' ? proj.html_url : proj.homepage}
+                    aria-label={proj.name}
                     target="_blank"
-                    href="https://github.com/larryh12/aemo-tool"
+                    className="overflow-hidden rounded-2xl drop-shadow-lg"
                   >
                     <Image
-                      src={aemo}
-                      alt="aemo"
+                      src={`https://raw.githubusercontent.com/larryh12/${proj.name}/main/docs/_og.png`}
+                      alt={proj.name}
+                      width={640}
+                      height={320}
                       className="h-full object-cover transition hover:scale-105"
                     />
                   </a>
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">AEMO Data Tool</h2>
-                  <p>
-                    Australian Energy Market Operator Data Tool - Interactive
-                    GUI application that provides data processing and data
-                    extraction features for AEMO raw data source.
-                  </p>
-                  <ul className="card-actions mt-2">
-                    <li className="badge-outline badge">Python</li>
-                    <li className="badge-outline badge">pandas</li>
-                    <li className="badge-outline badge">NumPy</li>
-                    <li className="badge-outline badge">openpyxl</li>
-                    <li className="badge-outline badge">PySimpleGUI</li>
-                  </ul>
+                  <a
+                    href={proj.html_url}
+                    aria-label={proj.name}
+                    target="_blank"
+                    className="prose flex flex-col gap-4 p-4 pb-10 sm:pb-4"
+                  >
+                    <h2 className="text-2xl font-semibold text-base-content">
+                      {proj.name}
+                    </h2>
+                    <p className="flex-1 font-normal text-base-content/80">
+                      {proj.description}
+                    </p>
+                    <ul className="flex flex-wrap gap-1.5">
+                      {proj.topics.map((topic: string) => (
+                        <li
+                          key={topic}
+                          className="w-fit rounded-full bg-neutral px-2 py-0.5 text-sm font-medium text-neutral-content"
+                        >
+                          {`#${topic}`}
+                        </li>
+                      ))}
+                    </ul>
+                  </a>
                 </div>
-              </div>
-            </div>
+              ))}
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

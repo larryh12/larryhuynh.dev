@@ -1,47 +1,42 @@
 import React from 'react';
-
 import Image from 'next/image';
-import avatar from '@/public/avatar.png';
+import HeroBtns from './HeroBtns';
 
-import { HiDownload } from 'react-icons/hi';
-
-const Hero = () => {
+const Hero = (props: any) => {
+  const name = props.name;
   return (
-    <section id="home" className="flex py-16 sm:min-h-screen">
-      <div className="home__wrapper flex w-full flex-col-reverse gap-4 sm:m-auto sm:flex-row sm:gap-0">
-        <div className="home__text flex flex-1 sm:flex-1">
-          <div className="home__text__wrapper m-auto flex flex-col">
-            <p className="prose font-light">Hi, my name is</p>
-            <p className="inline-block bg-gradient-to-r from-primary to-primary-focus bg-clip-text text-7xl font-extrabold text-transparent">
-              LARRY
-            </p>
-            <p className="inline-block bg-gradient-to-r from-secondary to-secondary-focus bg-clip-text text-7xl font-extrabold text-transparent">
-              HUYNH
-            </p>
-            <p className="prose font-light">I am a</p>
-            <p className="text-lg font-semibold">Graduate Software Developer</p>
-            <div className="mt-6 flex flex-col gap-4 [&>a]:btn-outline [&>a]:btn-sm [&>a]:btn [&>a]:normal-case">
-              <a href="#about">About me</a>
-              <a
-                href="https://www.linkedin.com/in/larry-huynh-dev/"
-                target="_blank"
-                className="btn-active gap-1"
-              >
-                <HiDownload className="text-lg" />
-                Résumé | CV
-              </a>
-            </div>
-          </div>
+    <section
+      id="home"
+      className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
+    >
+      <div className="grid w-full max-w-screen-lg grid-cols-1 gap-10 lg:grid-cols-2">
+        <div className="prose mx-auto w-fit lg:mx-0">
+          <p>Hi, my name is</p>
+          <h1 className="animate-vercel1 my-0 w-fit bg-clip-text text-7xl font-black uppercase text-transparent sm:text-9xl">
+            {name.first}
+          </h1>
+          <h1 className="animate-vercel2 my-0 w-fit bg-clip-text text-7xl font-black uppercase text-transparent sm:text-9xl">
+            {name.last}
+          </h1>
+          <p>I am a</p>
+          <h2 className="animate-vercel3 my-0 w-fit bg-clip-text text-lg text-transparent sm:text-3xl">
+            {name.title}
+          </h2>
         </div>
-        <div className="home__avatar flex flex-1">
-          <div className="home__avatar__wrapper blob m-auto overflow-hidden bg-gradient-to-r from-primary to-secondary">
-            <Image
-              src={avatar}
-              width={256}
-              height={256}
-              priority={true}
-              alt="avatar"
-            />
+
+        <div className="flex justify-center lg:justify-end">
+          <div className="flex flex-col justify-between">
+            <div className="animate-blob overflow-hidden">
+              <Image
+                src={name.avatar}
+                width={512}
+                height={512}
+                priority={true}
+                alt="avatar"
+                className="animate-vercelfull h-48 w-48 sm:h-72 sm:w-72"
+              />
+            </div>
+            <HeroBtns />
           </div>
         </div>
       </div>

@@ -2,19 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.drawer-content::-webkit-scrollbar,
-.dropdown-content::-webkit-scrollbar {
-  display: none;
-}
-
-.drawer-content,
-.dropdown-content {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.blob {
-  animation: blob__transform 30s ease-in-out infinite both alternate;
+.animate-blob {
+  animation: blob__transform 18.67s ease-in-out infinite both alternate;
 }
 
 @keyframes blob__transform {
@@ -22,22 +11,126 @@
   100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
   }
-  14% {
+  14.29% {
     border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
   }
-  28% {
+  28.57% {
     border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
   }
-  42% {
+  42.86% {
     border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
   }
-  56% {
+  57.14% {
     border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
   }
-  70% {
+  71.43% {
     border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
   }
-  84% {
+  85.71% {
     border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+.animate-vercel1 {
+  animation: vercel1__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercel1__transform {
+  0%,
+  100% {
+    @apply bg-primary;
+  }
+  16.67% {
+    @apply bg-primary;
+  }
+  33.33% {
+    @apply bg-base-content;
+  }
+  50.00% {
+    @apply bg-base-content;
+  }
+  66.67% {
+    @apply bg-base-content;
+  }
+  83.33% {
+    @apply bg-base-content;
+  }
+}
+
+.animate-vercel2 {
+  animation: vercel2__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercel2__transform {
+  0%,
+  100% {
+    @apply bg-base-content;
+  }
+  16.67% {
+    @apply bg-base-content;
+  }
+  33.33% {
+    @apply bg-secondary;
+  }
+  50.00% {
+    @apply bg-secondary;
+  }
+  66.67% {
+    @apply bg-base-content;
+  }
+  83.33% {
+    @apply bg-base-content;
+  }
+}
+
+.animate-vercel3 {
+  animation: vercel3__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercel3__transform {
+  0%,
+  100% {
+    @apply bg-base-content;
+  }
+  16.67% {
+    @apply bg-base-content;
+  }
+  33.33% {
+    @apply bg-base-content;
+  }
+  50.00% {
+    @apply bg-base-content;
+  }
+  66.67% {
+    @apply bg-accent;
+  }
+  83.33% {
+    @apply bg-accent;
+  }
+}
+
+.animate-vercelfull {
+  animation: vercelfull__transform 8s ease-in-out infinite;
+}
+
+@keyframes vercelfull__transform {
+  0%,
+  100% {
+    @apply bg-primary;
+  }
+  16.67% {
+    @apply bg-primary;
+  }
+  33.33% {
+    @apply bg-secondary;
+  }
+  50.00% {
+    @apply bg-secondary;
+  }
+  66.67% {
+    @apply bg-accent;
+  }
+  83.33% {
+    @apply bg-accent;
   }
 }
