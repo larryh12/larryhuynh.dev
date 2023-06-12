@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Contacts from '@/components/Contacts';
 import Experience from '@/components/Experience';
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
@@ -38,6 +39,7 @@ export default async function Home() {
       />
       <Experience exp={meta.exp} projs={projs} />
       <Projects exp={meta.exp} projs={projs} />
+      <Contacts links={meta.links} />
     </main>
   );
 }

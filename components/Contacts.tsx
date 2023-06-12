@@ -1,14 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import avatar from '@/public/avatar.png';
 
 import { FaUser, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { IoFlowerOutline, IoLogoVercel } from 'react-icons/io5';
 
-const Contacts = () => {
+const Contacts = (props: any) => {
   return (
     <section id="contacts" className="flex px-8 py-16 sm:min-h-screen">
-      <div className="contacts__wrapper m-auto flex flex-col">
+      {/* <div className="contacts__wrapper m-auto flex flex-col">
         <div className="contacts__heading text-center">
           <div className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-center text-2xl font-bold text-transparent">
             <p>Contacts</p>
@@ -82,7 +81,7 @@ const Contacts = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

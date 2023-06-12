@@ -43,16 +43,14 @@ const Experience = (props: any) => {
             {projs
               .filter((proj: any) => entry.work.includes(proj.name))
               .map((proj: any) => (
-                <a
+                <div
                   key={proj.name}
-                  href={proj.html_url}
-                  aria-label={proj.name}
-                  target="_blank"
                   className="not-prose mt-10 grid grid-cols-1 gap-2 rounded-2xl no-underline transition hover:bg-neutral sm:grid-cols-2 sm:gap-6"
                 >
                   <a
-                    target="_blank"
                     href={proj.homepage === '' ? proj.html_url : proj.homepage}
+                    aria-label={proj.name}
+                    target="_blank"
                     className="overflow-hidden rounded-2xl drop-shadow-lg"
                   >
                     <Image
@@ -63,7 +61,12 @@ const Experience = (props: any) => {
                       className="h-full object-cover transition hover:scale-105"
                     />
                   </a>
-                  <div className="prose flex flex-col gap-4 p-4 pb-10 sm:pb-4">
+                  <a
+                    href={proj.html_url}
+                    aria-label={proj.name}
+                    target="_blank"
+                    className="prose flex flex-col gap-4 p-4 pb-10 sm:pb-4"
+                  >
                     <h2 className="text-2xl font-semibold text-base-content">
                       {proj.name}
                     </h2>
@@ -80,8 +83,8 @@ const Experience = (props: any) => {
                         </li>
                       ))}
                     </ul>
-                  </div>
-                </a>
+                  </a>
+                </div>
               ))}
           </div>
         ))}

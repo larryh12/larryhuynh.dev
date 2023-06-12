@@ -23,16 +23,14 @@ const Projects = (props: any) => {
         </h1>
         <div className="mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2">
           {projs.map((proj: any) => (
-            <a
+            <div
               key={proj.name}
-              href={proj.html_url}
-              aria-label={proj.name}
-              target="_blank"
               className="not-prose flex flex-col gap-2 rounded-2xl no-underline transition hover:bg-base-100"
             >
               <a
-                target="_blank"
                 href={proj.homepage === '' ? proj.html_url : proj.homepage}
+                aria-label={proj.name}
+                target="_blank"
                 className="overflow-hidden rounded-2xl drop-shadow-lg"
               >
                 <Image
@@ -43,7 +41,12 @@ const Projects = (props: any) => {
                   className="h-full object-cover transition hover:scale-105"
                 />
               </a>
-              <div className="prose flex flex-col gap-4 p-4 pb-10">
+              <a
+                href={proj.html_url}
+                aria-label={proj.name}
+                target="_blank"
+                className="prose flex flex-col gap-4 p-4 pb-10"
+              >
                 <h2 className="text-2xl font-semibold text-neutral-content">
                   {proj.name}
                 </h2>
@@ -60,8 +63,8 @@ const Projects = (props: any) => {
                     </li>
                   ))}
                 </ul>
-              </div>
-            </a>
+              </a>
+            </div>
           ))}
         </div>
       </div>
