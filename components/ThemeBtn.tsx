@@ -27,7 +27,7 @@ const ThemeBtn = () => {
         <HiOutlineColorSwatch className="text-2xl" />
         <span className="hidden sm:inline">Themes</span>
       </summary>
-      <div className="dropdown-content rounded-box w-48 space-y-2 bg-neutral/90 p-3 drop-shadow-2xl">
+      <div className="dropdown-content rounded-box w-48 space-y-2 bg-neutral/90 p-3 drop-shadow-lg">
         {themes.map((theme, index) => (
           <button
             key={index}
