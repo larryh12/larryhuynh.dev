@@ -11,7 +11,7 @@ const Experience = (props: any) => {
       className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
     >
       <div className="prose w-full max-w-screen-lg">
-        <h1 className="my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h1 className="mx-auto my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Experience
         </h1>
 
@@ -19,7 +19,7 @@ const Experience = (props: any) => {
           <div key={index}>
             <div className="flex flex-col-reverse sm:flex-row sm:justify-between">
               <div>
-                <h2 className="sm:mt-20">{entry.head.title}</h2>
+                <h2>{entry.head.title}</h2>
                 <h3>
                   <a href={entry.head.link} target="_blank">
                     {entry.head.name}
@@ -27,13 +27,15 @@ const Experience = (props: any) => {
                 </h3>
                 <h4>{entry.head.time}</h4>
               </div>
-              <Image
-                src={entry.head.image}
-                alt={entry.head.name}
-                width={128}
-                height={128}
-                className="mask mask-squircle mb-0 mt-20 object-contain"
-              />
+              <div>
+                <Image
+                  src={entry.head.image}
+                  alt={entry.head.name}
+                  width={128}
+                  height={128}
+                  className="mask mask-squircle mx-auto mb-0 object-contain"
+                />
+              </div>
             </div>
             <ul>
               {entry.body.map((item: string, index: number) => (

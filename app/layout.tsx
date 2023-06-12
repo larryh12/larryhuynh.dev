@@ -22,7 +22,12 @@ export default function RootLayout({
     <html lang="en" className={`${inter.className} scroll-smooth`}>
       <body>
         <div className="drawer drawer-end">
-          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <input
+            id="my-drawer"
+            type="checkbox"
+            className="drawer-toggle"
+            aria-label="my-drawer"
+          />
           <div className="drawer-content">
             <Navbar />
             {children}

@@ -13,13 +13,13 @@ const About = (props: any) => {
       className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
     >
       <div className="prose w-full max-w-screen-lg">
-        <h1 className="my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h1 className="mx-auto my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           About
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div>
-            <h2 className="mt-20">{hello.head}</h2>
+            <h2>{hello.head}</h2>
             <ul></ul>
             {hello.body.map((line: string, index: number) => (
               <p key={index}>{line}</p>
