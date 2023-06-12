@@ -53,7 +53,7 @@ const Experience = (props: any) => {
                 >
                   <a
                     href={proj.homepage === '' ? proj.html_url : proj.homepage}
-                    className="overflow-hidden rounded-2xl bg-primary"
+                    className="overflow-hidden rounded-2xl"
                   >
                     <Image
                       src={`https://raw.githubusercontent.com/larryh12/${proj.name}/main/docs/_og.png`}
