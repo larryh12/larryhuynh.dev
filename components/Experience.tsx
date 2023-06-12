@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Image from 'next/image';
-import SectionHead from './SectionHead';
 
 const Experience = (props: any) => {
   const exp = props.exp;
