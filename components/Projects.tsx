@@ -18,7 +18,7 @@ const Projects = (props: any) => {
       className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
     >
       <div className="prose w-full max-w-screen-lg">
-        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h1 className="my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Projects
         </h1>
         <div className="mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2">
