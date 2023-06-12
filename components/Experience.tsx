@@ -45,7 +45,7 @@ const Experience = (props: any) => {
               .map((proj: any) => (
                 <div
                   key={proj.name}
-                  className="not-prose mt-10 grid grid-cols-1 gap-2 rounded-2xl no-underline transition hover:bg-neutral sm:grid-cols-2 sm:gap-6"
+                  className="not-prose mt-10 grid grid-cols-1 gap-2 rounded-2xl transition hover:bg-neutral sm:grid-cols-2 sm:gap-6"
                 >
                   <a
                     href={proj.homepage === '' ? proj.html_url : proj.homepage}
