@@ -21,14 +21,14 @@ const Navbar = () => {
         </div>
 
         <div className="flex-none">
-          <ul className="menu menu-horizontal hidden font-medium uppercase lg:flex [&>*]:[&>a]:[&>li]:text-2xl">
+          <ul className="menu menu-horizontal hidden font-semibold lg:flex [&>*]:[&>a]:[&>li]:text-2xl">
             <NavItems />
             <li>
               <ThemeBtn />
             </li>
           </ul>
 
-          <ul className="menu menu-horizontal font-medium uppercase lg:hidden">
+          <ul className="menu menu-horizontal font-semibold lg:hidden">
             <li>
               <ThemeBtn />
             </li>

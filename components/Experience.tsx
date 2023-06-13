@@ -11,7 +11,7 @@ const Experience = (props: any) => {
       className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
     >
       <div className="prose w-full max-w-screen-lg">
-        <h1 className="mx-auto my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Experience
         </h1>
 
@@ -47,7 +47,7 @@ const Experience = (props: any) => {
               .map((proj: any) => (
                 <div
                   key={proj.name}
-                  className="not-prose mt-10 grid grid-cols-1 gap-2 rounded-2xl transition hover:bg-neutral sm:grid-cols-2 sm:gap-6"
+                  className="not-prose mt-12 grid grid-cols-1 gap-2 rounded-2xl transition hover:bg-neutral sm:grid-cols-2 sm:gap-8"
                 >
                   <a
                     href={proj.homepage === '' ? proj.html_url : proj.homepage}
@@ -67,7 +67,7 @@ const Experience = (props: any) => {
                     href={proj.html_url}
                     aria-label={proj.name}
                     target="_blank"
-                    className="prose flex flex-col gap-4 p-4 pb-10 sm:pb-4"
+                    className="prose flex flex-col gap-4 p-4 pb-12 sm:pb-4"
                   >
                     <h2 className="text-2xl font-semibold text-base-content">
                       {proj.name}

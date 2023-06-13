@@ -18,10 +18,10 @@ const Projects = (props: any) => {
       className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
     >
       <div className="prose w-full max-w-screen-lg">
-        <h1 className="mx-auto my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Projects
         </h1>
-        <div className="mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2">
+        <div className="mt-24 grid grid-cols-1 gap-12 sm:grid-cols-2">
           {projs.map((proj: any) => (
             <div
               key={proj.name}
@@ -45,7 +45,7 @@ const Projects = (props: any) => {
                 href={proj.html_url}
                 aria-label={proj.name}
                 target="_blank"
-                className="prose flex flex-col gap-4 p-4 pb-10"
+                className="prose flex flex-col gap-4 p-4 pb-12"
               >
                 <h2 className="text-2xl font-semibold text-neutral-content">
                   {proj.name}

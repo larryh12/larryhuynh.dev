@@ -13,11 +13,11 @@ const About = (props: any) => {
       className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
     >
       <div className="prose w-full max-w-screen-lg">
-        <h1 className="mx-auto my-0 w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           About
         </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
           <div>
             <h2>{hello.head}</h2>
             <ul></ul>
@@ -26,17 +26,17 @@ const About = (props: any) => {
             ))}
           </div>
 
-          <div className="lg:text-right">
+          <div>
             <h2>🎓 Qualifications</h2>
             {qual.map((entry: any, index: number) => (
               <div key={index}>
                 <h3>{entry.head.title}</h3>
-                <h4 className="space-x-2">
+                <h4>
                   {entry.head.year}
-                  {' | '}
+                  {' | '}
                   <a href={entry.head.link}>{entry.head.subtitle}</a>
                 </h4>
-                <ul className="lg:list-none">
+                <ul>
                   {entry.body.map((item: string, index: number) => (
                     <li key={index}>{item}</li>
                   ))}
@@ -45,11 +45,12 @@ const About = (props: any) => {
             ))}
 
             <h2>📜 Certifications</h2>
+            <h3></h3>
             {cert.map((entry: any, index: number) => (
-              <h3 key={index} className="my-4 flex justify-between text-base">
-                <span className="flex-2 lg:flex-1">{entry.title}</span>
-                <span className="flex-1 text-right">{entry.year}</span>
-              </h3>
+              <h4 key={index} className="flex justify-between">
+                <span>{entry.title}</span>
+                <span>{entry.year}</span>
+              </h4>
             ))}
           </div>
         </div>
@@ -66,8 +67,8 @@ const About = (props: any) => {
                 <Image
                   src={`https://cdn.simpleicons.org/${skill.slug}`}
                   alt={skill.title}
-                  width={15}
-                  height={15}
+                  width={16}
+                  height={16}
                   className="my-0"
                 />
                 {skill.title}

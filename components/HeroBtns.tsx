@@ -6,7 +6,7 @@ const HeroBtns = () => {
     <>
       <a
         href="#contacts"
-        className="btn-outline btn-active btn-sm btn mb-4 mt-8 normal-case"
+        className="btn-outline btn-active btn-sm btn mb-5 mt-10 normal-case hover:bg-transparent hover:text-base-content"
       >
         <HiChatAlt className="text-base" /> Say Hello
       </a>
