@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 const AboutLayout = ({ children }: { children: React.ReactNode }) => {
-  return <main>{children}</main>;
+  return <> {children} </>;
 };
 
 export default AboutLayout;

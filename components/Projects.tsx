@@ -17,7 +17,7 @@ const Projects = (props: any) => {
           {projs.map((proj: any) => (
             <div
               key={proj.name}
-              className="not-prose flex flex-col gap-2 rounded-2xl transition hover:bg-base-100"
+              className="not-prose flex snap-center flex-col gap-2 rounded-2xl transition hover:bg-base-100"
             >
               <a
                 href={proj.homepage === '' ? proj.html_url : proj.homepage}

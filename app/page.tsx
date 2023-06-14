@@ -9,9 +9,9 @@ export default async function Home() {
   const projs = repos.filter((repo: any) => repo.description !== null);
 
   return (
-    <main className="w-full">
+    <>
       <Hero name={meta.links.name} />
       <Projects projs={projs} />
-    </main>
+    </>
   );
 }
