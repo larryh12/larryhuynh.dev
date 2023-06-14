@@ -5,13 +5,13 @@ const NavItems = () => {
   return (
     <>
       <li>
-        <a href="/about">
+        <a href="/about" aria-label="About">
           <HiOutlineUser className="text-2xl" />
           <span className="hidden sm:inline">About</span>
         </a>
       </li>
       <li>
-        <a href="/contacts">
+        <a href="/contacts" aria-label="Contacts">
           <HiOutlineMail className="text-2xl" />
           <span className="hidden sm:inline">Contacts</span>
         </a>
