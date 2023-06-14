@@ -1,45 +1,19 @@
-'use client';
-
 import React from 'react';
-import {
-  HiOutlineChat,
-  HiOutlineCode,
-  HiOutlineDesktopComputer,
-  HiOutlineHome,
-  HiOutlineUserCircle,
-} from 'react-icons/hi';
-
-const closeSidebar = () => {
-  const myDrawer = document.getElementById('my-drawer') as HTMLInputElement;
-  myDrawer.checked = false;
-};
+import { HiOutlineMail, HiOutlineUser } from 'react-icons/hi';
 
 const NavItems = () => {
   return (
     <>
-      <li onClick={closeSidebar}>
-        <a href="#home">
-          <HiOutlineHome /> Home
+      <li>
+        <a href="/about">
+          <HiOutlineUser className="text-2xl" />
+          <span className="hidden sm:inline">About</span>
         </a>
       </li>
-      <li onClick={closeSidebar}>
-        <a href="#about">
-          <HiOutlineUserCircle /> About
-        </a>
-      </li>
-      <li onClick={closeSidebar}>
-        <a href="#experience">
-          <HiOutlineCode /> Experience
-        </a>
-      </li>
-      <li onClick={closeSidebar}>
-        <a href="#projects">
-          <HiOutlineDesktopComputer /> Projects
-        </a>
-      </li>
-      <li onClick={closeSidebar}>
-        <a href="#contacts">
-          <HiOutlineChat /> Contacts
+      <li>
+        <a href="/contacts">
+          <HiOutlineMail className="text-2xl" />
+          <span className="hidden sm:inline">Contacts</span>
         </a>
       </li>
     </>

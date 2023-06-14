@@ -1,21 +1,17 @@
 import React from 'react';
-import { HiChatAlt, HiDownload } from 'react-icons/hi';
+import { HiAnnotation, HiUser } from 'react-icons/hi';
 
 const HeroBtns = () => {
   return (
     <>
       <a
-        href="#contacts"
+        href="/about"
         className="btn-outline btn-active btn-sm btn mb-5 mt-10 normal-case hover:bg-transparent hover:text-base-content"
       >
-        <HiChatAlt className="text-base" /> Say Hello
+        <HiUser className="text-base" /> About Me
       </a>
-      <a
-        href="/cv"
-        target="_blank"
-        className="btn-outline btn-sm btn normal-case"
-      >
-        <HiDownload className="text-base" /> Download CV
+      <a href="/contacts" className="btn-outline btn-sm btn normal-case">
+        <HiAnnotation className="text-base" /> Say Hello
       </a>
     </>
   );

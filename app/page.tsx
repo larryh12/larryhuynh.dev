@@ -1,27 +1,6 @@
-import About from '@/components/About';
-import Contacts from '@/components/Contacts';
-import Experience from '@/components/Experience';
-import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
-
-const useMeta = async () => {
-  const res = await fetch(
-    'https://raw.githubusercontent.com/larryh12/larryh12/main/public/meta.json',
-    { next: { revalidate: 60 } }
-  );
-  return res.json();
-};
-
-const useRepo = async () => {
-  const res = await fetch(
-    'https://api.github.com/users/larryh12/repos?sort=updated&direction=desc',
-    {
-      next: { revalidate: 60 },
-    }
-  );
-  return res.json();
-};
+import { useMeta, useRepo } from '@/lib/fetchGitHub';
 
 export default async function Home() {
   const metaData = useMeta();
@@ -30,18 +9,9 @@ export default async function Home() {
   const projs = repos.filter((repo: any) => repo.description !== null);
 
   return (
-    <main className="w-full">
+    <>
       <Hero name={meta.links.name} />
-      <About
-        hello={meta.hello}
-        qual={meta.qual}
-        cert={meta.cert}
-        tech={meta.tech}
-      />
-      <Experience exp={meta.exp} projs={projs} />
-      <Projects exp={meta.exp} projs={projs} />
-      <Contacts links={meta.links} />
-      <Footer />
-    </main>
+      <Projects projs={projs} />
+    </>
   );
 }
