@@ -3,14 +3,13 @@ import Image from 'next/image';
 
 const Experience = (props: any) => {
   const exp = props.exp;
-  const projs = props.projs;
 
   return (
     <section
       id="experience"
-      className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
+      className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
     >
-      <div className="prose w-full max-w-screen-lg">
+      <div className="prose">
         <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Experience
         </h1>
@@ -42,52 +41,6 @@ const Experience = (props: any) => {
                 <li key={index}>{item}</li>
               ))}
             </ul>
-            {projs
-              .filter((proj: any) => entry.work.includes(proj.name))
-              .map((proj: any) => (
-                <div
-                  key={proj.name}
-                  className="not-prose mt-12 grid grid-cols-1 gap-2 rounded-2xl transition hover:bg-neutral sm:grid-cols-2 sm:gap-8"
-                >
-                  <a
-                    href={proj.homepage === '' ? proj.html_url : proj.homepage}
-                    aria-label={proj.name}
-                    target="_blank"
-                    className="overflow-hidden rounded-2xl drop-shadow-lg"
-                  >
-                    <Image
-                      src={`https://raw.githubusercontent.com/larryh12/${proj.name}/main/docs/_og.png`}
-                      alt={proj.name}
-                      width={640}
-                      height={320}
-                      className="h-full object-cover transition hover:scale-105"
-                    />
-                  </a>
-                  <a
-                    href={proj.html_url}
-                    aria-label={proj.name}
-                    target="_blank"
-                    className="prose flex flex-col gap-4 p-4 pb-12 sm:pb-4"
-                  >
-                    <h2 className="text-2xl font-semibold text-base-content">
-                      {proj.name}
-                    </h2>
-                    <p className="flex-1 font-normal text-base-content/80">
-                      {proj.description}
-                    </p>
-                    <ul className="flex flex-wrap gap-1.5">
-                      {proj.topics.map((topic: string) => (
-                        <li
-                          key={topic}
-                          className="w-fit rounded-full bg-neutral px-2 py-0.5 text-sm font-medium text-neutral-content"
-                        >
-                          {`#${topic}`}
-                        </li>
-                      ))}
-                    </ul>
-                  </a>
-                </div>
-              ))}
           </div>
         ))}
       </div>

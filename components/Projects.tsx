@@ -2,15 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const Projects = (props: any) => {
-  const expProjs = props.exp.reduce(
-    (accumulator: Array<string>, expEntry: { work: Array<string> }) => {
-      return accumulator.concat(expEntry.work);
-    },
-    []
-  );
-  const projs = props.projs.filter(
-    (proj: any) => !expProjs.includes(proj.name)
-  );
+  const projs = props.projs;
 
   return (
     <section
@@ -21,7 +13,7 @@ const Projects = (props: any) => {
         <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Projects
         </h1>
-        <div className="mt-24 grid grid-cols-1 gap-12 sm:grid-cols-2">
+        <div className="mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2">
           {projs.map((proj: any) => (
             <div
               key={proj.name}
@@ -45,7 +37,7 @@ const Projects = (props: any) => {
                 href={proj.html_url}
                 aria-label={proj.name}
                 target="_blank"
-                className="prose flex flex-col gap-4 p-4 pb-12"
+                className="prose flex flex-col gap-2 p-2 pb-10"
               >
                 <h2 className="text-2xl font-semibold text-neutral-content">
                   {proj.name}
@@ -53,7 +45,7 @@ const Projects = (props: any) => {
                 <p className="flex-1 font-normal text-neutral-content/80">
                   {proj.description}
                 </p>
-                <ul className="flex flex-wrap gap-1.5">
+                <ul className="flex flex-wrap gap-1">
                   {proj.topics.map((topic: string) => (
                     <li
                       key={topic}

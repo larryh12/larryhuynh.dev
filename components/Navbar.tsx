@@ -1,5 +1,4 @@
 import React from 'react';
-import { HiMenuAlt3 } from 'react-icons/hi';
 import NavItems from './NavItems';
 import ThemeBtn from './ThemeBtn';
 
@@ -21,21 +20,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex-none">
-          <ul className="menu menu-horizontal hidden font-semibold lg:flex [&>*]:[&>a]:[&>li]:text-2xl">
+          <ul className="menu menu-horizontal font-semibold">
             <NavItems />
             <li>
               <ThemeBtn />
-            </li>
-          </ul>
-
-          <ul className="menu menu-horizontal font-semibold lg:hidden">
-            <li>
-              <ThemeBtn />
-            </li>
-            <li>
-              <label htmlFor="my-drawer" className="text-2xl">
-                <HiMenuAlt3 />
-              </label>
             </li>
           </ul>
         </div>

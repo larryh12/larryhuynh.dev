@@ -11,8 +11,8 @@ const Contacts = (props: any) => {
       id="contacts"
       className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
     >
-      <div className="prose w-full max-w-screen-lg">
-        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+      <div className="prose">
+        <h1 className="mx-auto w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Contacts
         </h1>
         <div className="flex flex-col items-center">

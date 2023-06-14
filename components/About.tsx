@@ -10,9 +10,9 @@ const About = (props: any) => {
   return (
     <section
       id="about"
-      className="flex min-h-screen w-full items-center justify-center bg-neutral px-4 py-20 sm:px-8"
+      className="flex min-h-screen w-full items-center justify-center bg-base-100 px-4 py-20 sm:px-8"
     >
-      <div className="prose w-full max-w-screen-lg">
+      <div className="prose lg:max-w-screen-lg">
         <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           About
         </h1>
@@ -62,7 +62,7 @@ const About = (props: any) => {
               <button
                 key={skill.slug}
                 aria-label={skill.title}
-                className="btn-neutral btn bg-base-100 normal-case"
+                className="btn-neutral btn normal-case"
               >
                 <Image
                   src={`https://cdn.simpleicons.org/${skill.slug}`}
