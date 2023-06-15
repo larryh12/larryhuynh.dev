@@ -1,10 +1,10 @@
 import About from '@/components/About';
 import Experience from '@/components/Experience';
-import { useMeta } from '@/lib/fetchGitHub';
+import { getMeta } from '@/lib/github';
 import React from 'react';
 
 const AboutPage = async () => {
-  const meta = await useMeta();
+  const meta = await getMeta();
 
   return (
     <>
