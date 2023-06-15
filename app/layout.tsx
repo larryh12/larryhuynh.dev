@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.className} snap-y snap-proximity scroll-smooth lg:snap-mandatory`}
+      className={`${inter.className} scroll-smooth lg:snap-y lg:snap-mandatory`}
     >
       <body className="[&>section]:snap-start">
         <Navbar />
