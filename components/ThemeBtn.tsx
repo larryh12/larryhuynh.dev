@@ -36,10 +36,12 @@ const ThemeBtn = () => {
   if (!mounted) {
     return (
       <li>
-        <a href="#" aria-label="Themes">
-          <HiOutlineColorSwatch className="text-2xl" />
-          <span className="hidden sm:inline">Themes</span>
-        </a>
+        <details className="dropdown-end dropdown">
+          <summary>
+            <HiOutlineColorSwatch className="text-2xl" />
+            <span className="hidden sm:inline">Themes</span>
+          </summary>
+        </details>
       </li>
     );
   }
