@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import './globals.css';
+import { Providers } from './providers';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,12 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html
+      suppressHydrationWarning
       lang="en"
       className={`${inter.className} scroll-smooth lg:snap-y lg:snap-mandatory`}
     >
       <body className="[&>section]:snap-start">
-        <Navbar />
-        {children}
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

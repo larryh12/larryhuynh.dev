@@ -22,9 +22,7 @@ const Navbar = () => {
         <div className="flex-none">
           <ul className="menu menu-horizontal font-semibold">
             <NavItems />
-            <li>
-              <ThemeBtn />
-            </li>
+            <ThemeBtn />
           </ul>
         </div>
       </div>
