@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const metadata = {
-  title: 'larryhuynh.dev | About',
+  title: 'About - larryhuynh.dev',
   description: "Larry Huynh's Personal Website",
 };
 

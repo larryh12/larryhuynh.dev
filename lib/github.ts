@@ -1,4 +1,4 @@
-export const useMeta = async () => {
+export const getMeta = async () => {
   const res = await fetch(
     'https://raw.githubusercontent.com/larryh12/larryh12/main/public/meta.json',
     { next: { revalidate: 60 } }
@@ -6,7 +6,7 @@ export const useMeta = async () => {
   return res.json();
 };
 
-export const useRepo = async () => {
+export const getRepos = async () => {
   const res = await fetch(
     'https://api.github.com/users/larryh12/repos?sort=updated&direction=desc',
     {
