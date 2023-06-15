@@ -23,9 +23,9 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="en"
-      className={`${inter.className} scroll-smooth lg:snap-y lg:snap-mandatory`}
+      className={`${inter.className} scroll-smooth`}
     >
-      <body className="[&>section]:snap-start">
+      <body>
         <Providers>
           <Navbar />
           {children}
