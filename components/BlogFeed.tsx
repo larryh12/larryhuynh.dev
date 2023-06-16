@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const PageFeed = (props: any) => {
+const BlogFeed = (props: any) => {
   const pages = props.pageList;
 
   return (
@@ -52,4 +52,4 @@ const PageFeed = (props: any) => {
   );
 };
 
-export default PageFeed;
+export default BlogFeed;

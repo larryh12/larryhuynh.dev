@@ -1,4 +1,4 @@
-import PageFeed from '@/components/PageFeed';
+import BlogFeed from '@/components/BlogFeed';
 import React from 'react';
 
 const Blog = (props: any) => {
@@ -20,7 +20,11 @@ const Blog = (props: any) => {
         <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Featured Posts
         </h1>
-        <PageFeed pageList={featuredPages} />
+        <BlogFeed pageList={featuredPages} />
+        <h1 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          Latest Posts
+        </h1>
+        <BlogFeed pageList={latestPages} />
       </div>
     </section>
   );
