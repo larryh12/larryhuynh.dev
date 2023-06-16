@@ -18,16 +18,12 @@ const Contacts = (props: any) => {
         <div className="flex flex-col items-center">
           <h2>🤙 Get in touch with me!</h2>
           <div className="not-prose flex flex-col gap-8 rounded-2xl bg-neutral px-8 py-16 text-neutral-content drop-shadow-lg sm:flex-row">
-            <div className="animate-vercelfull mx-auto h-fit w-fit flex-1 overflow-hidden rounded-xl p-0.5">
-              <Image
-                src={links.name.avatar}
-                alt="avatar"
-                width={256}
-                height={256}
-                className="w-48 rounded-xl bg-neutral sm:w-64"
-              />
+            <div className="animate-vercelfull mx-auto h-fit w-fit rounded-xl p-0.5">
+              <div className="aspect-square w-52 overflow-hidden rounded-xl bg-neutral drop-shadow">
+                <Image src={links.name.avatar} alt="avatar" fill />
+              </div>
             </div>
-            <div className="grid flex-2 gap-4 font-medium [&>*]:flex [&>*]:items-center [&>*]:gap-4 [&>*]:border-b [&>*]:border-neutral-content [&>*]:pb-1">
+            <div className="grid gap-4 font-medium [&>*]:flex [&>*]:items-center [&>*]:gap-4 [&>*]:border-b [&>*]:border-neutral-content [&>*]:pb-1">
               <span>
                 <FaUser /> {links.name.first} {links.name.last}
               </span>

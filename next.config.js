@@ -5,11 +5,23 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'raw.githubusercontent.com',
+        hostname: '*.amazonaws.com',
       },
       {
         protocol: 'https',
-        hostname: 'cdn.simpleicons.org',
+        hostname: '*.notion.so',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.simpleicons.org',
       },
     ],
   },

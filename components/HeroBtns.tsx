@@ -7,7 +7,7 @@ const HeroBtns = () => {
     <>
       <Link
         href="/about"
-        className="btn-outline btn-active btn-sm btn mb-5 mt-10 normal-case hover:bg-transparent hover:text-base-content"
+        className="btn-outline btn-active btn-sm btn normal-case hover:bg-transparent hover:text-base-content"
       >
         <HiUser className="text-base" /> About Me
       </Link>

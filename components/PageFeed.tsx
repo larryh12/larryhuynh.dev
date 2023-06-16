@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,16 +10,19 @@ const PageFeed = (props: any) => {
       {pages.map((page: any) => (
         <Link
           key={page.id}
-          target="_blank"
           href={page.public_url}
           aria-label={page.properties.Name.title[0].plain_text}
           className="not-prose flex flex-col gap-4 rounded-2xl no-underline transition hover:bg-base-100"
         >
-          <figure className="overflow-hidden rounded-2xl drop-shadow-lg">
-            <img
-              loading="lazy"
-              src={page.cover.type === 'external' && page.cover.external.url}
+          <figure className="aspect-[2/1] overflow-hidden rounded-2xl drop-shadow-lg">
+            <Image
+              src={
+                page.cover.type === 'external'
+                  ? page.cover.external.url
+                  : page.cover.type === 'file' && page.cover.file.url
+              }
               alt={page.properties.Name.title[0].plain_text}
+              fill
             />
           </figure>
           <div className="prose flex flex-col gap-4 p-4 pb-10">

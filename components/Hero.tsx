@@ -25,18 +25,18 @@ const Hero = (props: any) => {
         </div>
 
         <div className="flex justify-center lg:justify-end">
-          <div className="flex flex-col justify-between">
-            <div className="animate-blob overflow-hidden">
+          <div className="flex flex-col items-center justify-between gap-10">
+            <figure className="animate-blob aspect-square w-52 overflow-hidden drop-shadow sm:w-72">
               <Image
                 src={name.avatar}
-                width={512}
-                height={512}
-                priority={true}
                 alt="avatar"
-                className="animate-vercelfull h-48 w-48 sm:h-72 sm:w-72"
+                className="animate-vercelfull"
+                fill
               />
+            </figure>
+            <div className="flex flex-wrap justify-center gap-5 sm:w-full sm:flex-col">
+              <HeroBtns />
             </div>
-            <HeroBtns />
           </div>
         </div>
       </div>
