@@ -5,8 +5,8 @@ export const metadata = {
   description: "Larry Huynh's Personal Website",
 };
 
-const AboutLayout = ({ children }: { children: React.ReactNode }) => {
+const layout = ({ children }: { children: React.ReactNode }) => {
   return <> {children} </>;
 };
 
-export default AboutLayout;
+export default layout;

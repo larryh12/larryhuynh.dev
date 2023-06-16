@@ -3,7 +3,7 @@ import Experience from '@/components/Experience';
 import { getMeta } from '@/lib/github';
 import React from 'react';
 
-const AboutPage = async () => {
+const page = async () => {
   const meta = await getMeta();
 
   return (
@@ -19,4 +19,4 @@ const AboutPage = async () => {
   );
 };
 
-export default AboutPage;
+export default page;

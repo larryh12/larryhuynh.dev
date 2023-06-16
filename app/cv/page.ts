@@ -1,5 +1,8 @@
 import { redirect } from 'next/navigation';
+import React from 'react';
 
-export default function page() {
+const page = () => {
   redirect('https://google.com');
-}
+};
+
+export default page;
