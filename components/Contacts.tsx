@@ -19,8 +19,13 @@ const Contacts = (props: any) => {
           <h2>🤙 Get in touch with me!</h2>
           <div className="not-prose flex flex-col gap-8 rounded-2xl bg-neutral px-8 py-16 text-neutral-content drop-shadow-lg sm:flex-row">
             <div className="animate-vercelfull mx-auto h-fit w-fit rounded-xl p-0.5">
-              <div className="aspect-square w-52 overflow-hidden rounded-xl bg-neutral drop-shadow">
-                <Image src={links.name.avatar} alt="avatar" fill />
+              <div className="aspect-square w-52 overflow-hidden rounded-xl bg-neutral">
+                <Image
+                  src={links.name.avatar}
+                  alt="avatar"
+                  width={256}
+                  height={256}
+                />
               </div>
             </div>
             <div className="grid gap-4 font-medium [&>*]:flex [&>*]:items-center [&>*]:gap-4 [&>*]:border-b [&>*]:border-neutral-content [&>*]:pb-1">

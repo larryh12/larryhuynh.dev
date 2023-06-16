@@ -22,7 +22,8 @@ const BlogFeed = (props: any) => {
                   : page.cover.type === 'file' && page.cover.file.url
               }
               alt={page.properties.Name.title[0].plain_text}
-              fill
+              width={640}
+              height={320}
             />
           </figure>
           <div className="prose flex flex-col gap-4 p-4 pb-10">
